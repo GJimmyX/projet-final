@@ -1,0 +1,389 @@
+/* CSS du header du site 'Passionné de Formule 1' */
+
+body{
+    header{
+
+        /* Header */
+        
+        background-color: #2A2622;
+        padding: 1% 0;
+        font-family: 'Lato', sans-serif;
+        .header-container{
+            --bs-gutter-x: 0 !important;
+            --bs-gutter-y: 0 !important;
+            width: 80%;
+            margin: auto;
+            align-items: center;
+
+            /* Responsive pour le mobile */
+
+            @media (max-width: 575.98px){
+                flex-direction: column;
+            }
+
+            /* Responsive pour la tablette */
+
+            @media (min-width: 576px) AND (max-width: 991.98px){
+                align-items: start;
+            }
+            @media (min-width: 992px) AND (max-width: 1199.98px){
+                flex-direction: column;
+            }
+
+            /* Logo et titre du site */
+
+            .siteLogo{
+                width: 25%;
+                margin: 0;
+                font-weight: 300;
+                font-size: 1.5em;
+                line-height: 1;
+                color: white;
+
+                /* Responsive pour le mobile */
+
+                @media (max-width: 575.98px){
+                    width: 75%;
+                }
+
+                /* Responsive pour la tablette */
+
+                @media (min-width: 576px) AND (max-width: 991.98px){
+                    padding: 0.5rem 0
+                }
+                .logo{
+                    text-align: center;
+                    .logoLink{
+                        text-decoration: none;
+                        cursor: url("/images/bouton_icones/cursorBtn.png"), context-menu;
+                        .logoImg{
+                            width: 75%;
+                            height: 100%;
+
+                            /* Responsive mobile et tablette */
+
+                            @media (min-width: 576px) AND (max-width: 991.98px){
+                                width: 100%;
+                                padding: 0.5rem 0
+                            }
+                        }
+                    }
+                }
+            }
+
+            /* Menu de navigation du site */
+
+            .siteNav{
+                width: 75%;
+
+                /* Responsive pour le mobile */
+
+                @media (max-width: 575.98px){
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                /* Responsive pour la tablette */
+
+                @media (min-width: 576px) AND (max-width: 991.98px){
+                    justify-content: space-around;
+                    align-items: center;
+                }
+                @media (min-width: 992px) AND (max-width: 1199.98px){
+                    width: 100%;
+                }
+                .nav-menu{
+                    width: 90%;
+                    position: relative;
+
+                    /* Responsive Mobile et tablette */
+
+                    @media (min-width: 576px) AND (max-width: 991.98px){
+                        width: 75%;
+                    }
+
+                    /* Bouton pour le menu responsive */
+
+                    #navbarButton{
+                        display: none;
+
+                        /* Responsive pour le bouton */
+
+                        @media (max-width: 991.98px){
+                            display: block;
+                            margin: auto;
+                            padding: 0;
+                            border: 0;
+                            background: transparent;
+                        }
+                        .imgNavbarBtn{
+                            width: 64px;
+                            height: 64px;
+                            transform: rotateZ(90deg);
+                        }
+                    }
+
+                    /* Menu */
+                    
+                    .navbar-nav{
+                        width: 100%;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        align-items: center;
+
+                        /* Responsive mobile et tablette */
+
+                        @media (min-width: 576px) AND (max-width: 991.98px){
+                            padding-right: 2rem;
+                            justify-content: center;
+                        }
+                        @media (max-width: 991.98px){
+                            display: none;
+                        }
+
+                        /* Liens du menu */
+
+                        .nav-item{
+
+                            /* Responsive mobile et tablette */
+
+                            @media (min-width: 576px) AND (max-width: 767.98px){
+                                margin: 0 0.33rem;
+                            }
+                            @media (min-width: 768px) AND (max-width: 991.98px){
+                                margin: 0 1rem;
+                            }
+                            .nav-link
+                            {
+
+                                /* Style des liens */
+
+                                position: relative;
+                                font-weight: 400;
+                                font-size: 1.5em;
+                                line-height: 1;
+                                color: white;
+                                cursor: url("/images/bouton_icones/cursorBtn.png"), context-menu;
+                            }
+
+                            .nav-link::before, .nav-link::after{
+
+                                /* Effets sur chaque lien */
+
+                                content: '';
+                                position: absolute;
+                                left: 0;
+                                right: 0;
+                                height: 3px;
+                                border-radius: 1.5px;
+                                background-color: #E00501;
+                                transform: scaleX(0);
+                                transition: transform 0.5s ease;
+
+                                /* Responsive pour le mobile */
+
+                                @media (max-width: 575.98px){
+                                    display: none;
+                                }
+                            }
+
+                            .nav-link::before{
+
+                                /* Position au début */
+
+                                top: 0;
+                                transform-origin: center right;
+                            }
+
+                            .nav-link:hover::before{
+
+                                /* Position à la fin */
+
+                                transform-origin: center left;
+                                transform: scaleX(1);
+                            }
+
+                            .nav-link::after{
+
+                                /* Position au début */
+                                
+                                bottom: 0;
+                                transform-origin: center left;
+                            }
+
+                            .nav-link:hover::after{
+
+                                /* Position à la fin */
+
+                                transform-origin: center right;
+                                transform: scaleX(1);
+                            }
+
+                            /* Menu Administrateur */
+
+                            .dropdown-menu{
+                                position: absolute !important;
+                                background: #241F48;
+
+                                /* Responsive pour le mobile */
+
+                                @media (max-width: 575.98px){
+                                    width: 100%;
+                                    left: -50px;
+                                }
+                                .dropdown-item{
+                                    color: #FFFFFF;
+
+                                    /* Responsive pour le mobile */
+
+                                    @media (max-width: 575.98px){
+                                        text-align: center;
+                                    }
+                                    &:hover{
+                                        @media (min-width: 1360px){
+                                            background-color: #E00501;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    /* Quand le menu est ouvert */
+
+                    .toggled-on{
+
+                        /* Mobile */
+
+                        @media (max-width: 575.98px){
+                            flex-direction: column;
+                            align-items: center;
+                        }
+
+                        /* Tablette */
+
+                        @media (min-width: 576px) AND (max-width: 991.98px){
+                            padding-top: 2rem;
+                        }
+
+                        /* Mobile et Tablette */
+
+                        @media (max-width: 991.98px){
+                            display: flex;
+                        }
+                    }
+                }
+                
+                /* Barre de recherche */
+
+                .navSearch{
+                    width: 10%;
+                    position: relative;
+
+                    /* Responsive pour le mobile */
+
+                    @media (max-width: 575.98px){
+                        width: 100%;
+                    }
+
+                    /* Responsive pour la tablette */
+
+                    @media (min-width: 576px) AND (max-width: 991.98px){
+                        width: 25%;
+                    }
+
+                    /* Responsive mobile et tablette */
+
+                    @media (max-width: 991.98px){
+                        height: 64px;
+                    }
+                    #searchBtn{
+                        display: flex;
+                        margin: auto;
+                        background-color: transparent;
+                        border: 0;
+                        padding: 0;
+                        cursor: url("/images/bouton_icones/cursorBtn.png"), context-menu;
+                        .mimify-glass{
+                            margin: 0;
+                            padding: 0.5rem 0;
+                            font-size: 1.5em;
+                            color: white;
+                        }
+                    }
+                    .searchForm{
+                        label{
+                            display: none;
+                        }
+                        .searchInput{
+                            display: none;
+                            margin-top: 25px;
+
+                            /* Responsive pour le mobile */
+
+                            @media (max-width: 575.98px){
+                                margin-top: 5px;
+                            }
+
+                            /* Responsive pour la tablette */
+                            
+                            @media (min-width: 576px) AND (max-width: 991.98px){
+                                margin-top: -2.5px;
+                            }
+                            @media (min-width: 992px) AND (max-width: 1199.98px){
+                                margin-top: 7.5px;
+                            }
+                        }
+                        .toggle-search{
+                            z-index: 1;
+                            position: absolute;
+                            right: 0;
+                            display: flex;
+                            text-align: center;
+                            &:focus{
+                                border-color: #989898;
+                                box-shadow: none;
+                            }
+                            
+                            /* Largeur de la barre de recherche hors mobile */
+
+                            @media (min-width: 576px){
+                                width: 300px
+                            }
+                        }
+                    }
+                }
+            }
+
+            /* Menu responsive à partir d'une largeur inférieure à 992px */
+
+            .toggled-on{
+
+                /* Mobile */
+
+                @media (max-width: 575.98px){
+                    align-items: center;
+                }
+
+                /* Tablette */
+
+                @media (min-width: 576px) AND (max-width: 991.98px){
+                    align-items: start;
+                }
+            }
+        }
+    }
+
+    /* Petite touche de personnalisation pour l'auto-completion de la barre de recherche*/
+
+    .ui-autocomplete{
+        .ui-menu-item{
+            .ui-menu-item-wrapper{
+                &:hover{
+                    background-color: #E00501 !important;
+                    border-color: #2A2622;
+                }
+            }
+        }
+    }
+}

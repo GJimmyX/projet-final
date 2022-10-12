@@ -1,0 +1,53 @@
+/* CSS de la page de mentions légales du site 'Passionné de Formule 1' */
+
+.mentions-legales{
+
+    /* Contenu de la page de mentions légales */
+
+    width: 100%;
+    padding: 10% 10%;
+
+    /* Police d'écriture et curseur utilisés sur la page */
+
+    font-family: 'Lato', sans-serif;
+    cursor: context-menu;
+
+    /* Arrière plan de la page */
+
+    background-color: #54514E;
+    .article01, .article02, .article03, .article04, .article05, .article06{
+
+        /* Couleur des titres et du texte des mentions légales */
+
+        h2, p, a, ul li{
+            text-align: justify;
+            color: #FFFFFF;
+        }
+        h2{
+            text-decoration: underline;
+            font-size: 2.25em;
+
+            /* Responsive pour le mobile */
+
+            @media (max-width: 575.98px){
+                text-align: center;
+            }
+        }
+        p, ul li{
+            font-size: 1.5em;
+        }
+    }
+    .article01{
+
+        /* Couleur du texte des mentions légales */
+
+        div{
+            margin-bottom: 1rem;
+            .part11, .part12, .part13, .part14{
+                text-align: justify;
+                font-size: 1.5em;
+                color: #FFFFFF;
+            }
+        }
+    }
+}

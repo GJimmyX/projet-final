@@ -1,0 +1,82 @@
+/* CSS pour la pagination sur les différentes page du site 'Passionné de Formule 1' */
+
+.pagination-custom{
+
+    /* Menu de navigation */
+
+    margin: 1% 0;
+    font-family: 'Lato', sans-serif;
+    .tableau-pagination{
+        padding: 0;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .pagination-element{
+
+            /* Affichage des différents liens de pagination */
+
+            padding: 2.5%;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            .pagination-disabled, .pagination-lien{
+
+                /* Liens désactivés et actifs */
+                
+                width: 50px;
+                height: 50px;
+                padding: 50%;
+                border-radius: 10px;
+                font-size: 1.5em;
+                background-color: #E00501;
+                color: white;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .pagination-disabled{
+
+                /* Au survol des liens désactivés */
+
+                cursor: context-menu;
+            }
+            .pagination-lien{
+                position: relative;
+                &:hover{
+
+                    /* Au survol des liens actifs */
+
+                    transform: scaleX(1);
+                    transition: transform 0.5s ease;
+                    background-color: #241F48;
+                }
+            }
+
+            /* Animation sur les liens */
+
+            .pagination-lien::before, .pagination-lien::after{
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                height: 2px;
+                background-color: #FFFFFF;
+                transform-origin: center right;
+                transform: scaleX(0);
+                transition: transform 0.5s ease;
+            }
+            .pagination-lien::before{
+                top: 0;
+            }
+            .pagination-lien::after{
+                bottom: 0;
+            }
+            .pagination-lien:hover::before, .pagination-lien:hover::after{
+                transform-origin: center left;
+                transform: scaleX(1);
+            }
+        }
+    }
+}

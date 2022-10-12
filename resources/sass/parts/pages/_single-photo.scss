@@ -1,0 +1,112 @@
+/* CSS pour la page d'affichage d'une photo du site 'Passionné de Formule 1' */
+
+.single-photo{
+
+    /* Police d'écriture et curseur utilisés sur la page */
+
+    font-family: 'Lato', sans-serif;
+    cursor: context-menu;
+    background-color: #989898;
+    .backBtn{
+
+        /* Bouton de retour sur la page de photos */
+
+        width: 100%;
+        padding: 1rem 10%;
+
+        /* Responsive pour le mobile */
+
+        @media (max-width: 575.98px){
+            text-align: center;
+        }
+        .btn-single{
+            font-size: 1.5em;
+            color: #241F48;
+        }
+    }
+    .background-image{
+
+        /* Image en arrière plan */
+
+        background-color: #989898;
+        .photo-contenu{
+
+            /* Contenu de la page single-photo */
+
+            width: 100%;
+            padding: 7% 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            /* Responsive mobile et tablette */
+
+            @media (max-width: 991.98px){
+                flex-direction: column;
+            }
+            .image-photo{
+
+                /* Photo importée */
+
+                width: 40%;
+                height: auto;
+
+                /* Responsive pour le mobile */
+
+                @media (max-width: 575.98px){
+                    width: 95%
+                }
+
+                /* Responsive pour la tablette */
+
+                @media (min-width: 575.98px) AND (max-width: 991.98px){
+                    width: 80%
+                }
+            }
+
+            /* Description de la photo */
+
+            .desc{
+                width: 40%;
+                margin: 2rem 0;
+
+                /* Responsive pour le mobile */
+
+                @media (max-width: 575.98px){
+                    width: 95%
+                }
+
+                /* Responsive pour la tablette */
+
+                @media (min-width: 575.98px) AND (max-width: 991.98px){
+                    width: 80%
+                }
+
+                /* Responsive mobile et tablette */
+
+                @media (max-width: 991.98px){
+                    text-align: center;
+                }
+                span{
+                    font-size: 1.5em;
+                    color: #241F48;
+                }
+                .desc-photo{
+
+                    /* Texte relatif à la photo */
+                    
+                    text-align: justify;
+                    font-size: 1.5em;
+                    font-style: italic;
+                    color: #241F48;
+
+                    /* Responsive mobile et tablette */
+
+                    @media (max-width: 991.98px){
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

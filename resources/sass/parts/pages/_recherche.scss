@@ -1,0 +1,91 @@
+/* CSS de la page de recherche di site 'Passionné de Formule 1' */
+
+.recherche{
+
+    /* Contenu de la page de recherche */
+
+    width: 100%;
+    padding: 10% 10%;
+
+    /* Police d'écriture et curseur utilisés sur la page */
+
+    font-family: 'Lato', sans-serif;
+    cursor: context-menu;
+
+    /* Arrière plan de la page */
+
+    background-color: #54514E;
+    .titre-recherche{
+
+        /* Titre de la page de recherche */
+
+        margin-bottom: 4.5rem;
+        font-size: 2rem;
+        color: #FFFFFF;
+
+        /* Responsive pour le mobile */
+
+        @media (max-width: 575.98px){
+            font-size: 1.75rem;
+        }
+
+        /* Responsive mobile et tablette */
+
+        @media (max-width: 991.98px){
+            text-align: center;
+        }
+    }
+    .recherche-articles, .recherche-biographies, .recherche-pilotes, .recherche-ecuries, .recherche-photos{
+        margin: 2rem 0;
+
+        /* Responsive mobile et tablette */
+
+        @media (max-width: 991.98px){
+            margin: 1rem 0;
+        }
+
+        /* Résultats pour chaque section */
+
+        h3, p{
+            margin: 0.75rem 0;
+            color: #FFFFFF;
+        }
+
+        /* Titre de chaque section */
+
+        h3{
+            font-size: 1.75rem;
+            
+            /* Responsive pour le mobile */
+
+            @media (max-width: 575.98px){
+                font-size: 1.5rem;
+            }
+
+            /* Responsive mobile et tablette */
+
+            @media (max-width: 991.98px){
+                text-align: center;
+            }
+        }
+
+        /* Résultat(s) de chaque section */
+
+        p{
+            padding: 0.5% 0;
+            font-size: 1.5rem;
+
+            /* Responsive pour le mobile */
+
+            @media (max-width: 575.98px){
+                font-size: 1.25rem;
+            }
+
+            /* Responsive mobile et tablette */
+
+            @media (max-width: 991.98px){
+                text-align: center;
+            }
+        }
+    }
+}

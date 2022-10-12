@@ -1,0 +1,266 @@
+/* CSS de la page de création de pilotes du site 'Passionné de Formule 1' */
+
+.create-edit-admin-pilotes{
+
+    /* Police d'écriture et curseur utilisés sur la page */
+
+    font-family: 'Lato', sans-serif;
+    cursor: context-menu;
+    .create-edit-titre-btn{
+
+        /* Titre de la page et bouton de retour sur l'accueil administrateur */
+
+        padding: 1% 0;
+        --bs-gutter-x: 0 !important;
+        --bs-gutter-y: 0 !important;
+        background-color: #54514E;
+        @media (max-width: 575.98px){
+            text-align: center;
+        }
+        .titre-btn-create-edit{
+            .btn-create-edit{
+
+                /* Bouton */
+
+                border: 1px solid transparent;
+                margin: 0 0 0 16px;
+                padding: 0.375rem 0.75rem;
+                border-radius: 0.5rem;
+                text-align: center;
+                text-decoration: none;
+                vertical-align: middle;
+                cursor: pointer;
+                background-color: #E00501;
+                line-height: 2;
+                font-weight: 400;
+                font-size: 2em;
+                color: #FFFFFF;
+
+                /* Responsive pour le mobile */
+
+                @media (max-width: 575.98px){
+                    margin: 0;
+                    font-size: 1.5em;
+                }
+
+                /* Image du bouton */
+
+                img{
+                    width: 34px;
+                    height: 34px;
+                    vertical-align: text-bottom;
+
+                    /* Responsive pour le mobile */
+
+                    @media (max-width: 575.98px){
+                        width: 26px;
+                        height: 26px;
+                    }
+                }
+            }
+            .titre-edit{
+
+                /* Titre */
+
+                width: 95%;
+                margin: 0 auto 1rem;
+                text-align: center;
+                line-height: 1;
+                font-weight: 500;
+                font-size: 2.5em;
+                color: #FFFFFF;
+
+                /* Responsive pour le mobile */
+
+                @media (max-width: 575.98px){
+                    margin: 1rem auto;
+                    font-size: 2em;
+                }
+            }
+            .titre-create{
+
+                /* Titre */
+
+                margin: 0 0 1rem 0;
+                text-align: center;
+                line-height: 1;
+                font-weight: 500;
+                font-size: 2.5em;
+                color: #FFFFFF;
+
+                /* Responsive pour le mobile */
+
+                @media (max-width: 575.98px){
+                    margin: 1rem 0;
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+    .background-create{
+        background-image: url('/images/crud_pilotes/Fond_page_de_creation_admin.jpg');
+    }
+    .background-edit{
+        background-image: url('/images/crud_pilotes/Fond_page_d_edition_admin.jpg');
+    }
+    .background-image{
+
+        /* Image en arrière plan */
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #54514E;
+        .create-edit-container{
+
+            /* Définition du postionnement du contenu sur la page */
+
+            width: 80%;
+            margin: 2rem 0;
+            background-color: rgba(#54514E, 0.3);
+            border-radius: 8px;
+            border: 1px solid #2A2622;
+            .create-form, .edit-form{
+
+                /* Définition du positionnement du formulaire sur la page */
+
+                width: 75%;
+                margin: auto;
+                padding: 2% 0;
+                .row{
+                    gap: 32px;
+                    .form-pilote-champ-ecurie_id, .form-pilote-champ-role_pilote, .form-pilote-champ-nom-pilote, .form-pilote-champ-nationalite, .form-pilote-champ-drapeau, .form-pilote-champ-points, .form-pilote-champ-img_ecurie{
+
+                        /* Postionnement des champs du formulaire (Ecurie du pilote, Rôle et nom du pilote, Nationalité avec le drapeau du pilote, nombre de points du pilote et écusson de l'écurie du pilote) */
+
+                        padding: 0;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        /* Responsive mobile et tablette */
+
+                        @media (max-width: 1023.98px){
+                            flex-direction: column;
+                        }
+                        strong{
+                            width: 60%;
+                            font-size: 2em;
+                            color: #FFFFFF;
+
+                            /* Responsive pour le mobile */
+
+                            @media (max-width: 575.98px){
+                                font-size: 1.5em;
+                            }
+
+                            /* Responsive mobile et tablette */
+
+                            @media (max-width: 1023.98px){
+                                width: 100%;
+                                text-align: center;
+                            }
+                        }
+                        select, input, textarea{
+                            width: 40%;
+                            border-color: #2A2622;
+                            background-color: #989898;
+                            color: #2A2622;
+                            outline: none;
+
+                            /* Responsive mobile et tablette */
+
+                            @media (max-width: 1023.98px){
+                                width: 100%;
+                            }
+                            &:focus{
+                                box-shadow: none;
+                            }
+                            &::placeholder{
+                                color: #2A2622;
+                            }
+                        }
+
+                        /* Particularité pour l'édition du drapeau et de l'écusson, on affiche les images enregistrées dans la base  */
+
+                        .edit-champ-drapeau, .edit-champ-img_ecurie{
+
+                            /* Responsive pour la tablette */
+
+                            @media(min-width: 1024px){
+                                width: 40%;
+                            }
+                            .drapeau-actuel, .ecurie-actuelle{
+                                width: 65px;
+                                height: 65px;
+                                display: flex;
+                                margin: auto;
+                            }
+                            .input-nv-drapeau, .input-nvl-ecurie{
+                                width: 100%;
+                                margin: 1rem 0 0 0 ;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Bouton d'envoi du formulaire */
+
+    .create-envoy{
+        display: flex;
+        justify-content: center;
+        padding: 1% 0;
+        background-color: #54514E;
+        .btn-envoy{
+
+            /* Bouton */
+
+            width: 200px;
+            height: 48px;
+            border: 1px solid transparent;
+            border-radius: 0.5rem;
+            text-align: center;
+            text-decoration: none;
+            vertical-align: middle;
+            cursor: pointer;
+            background-color: #E00501;
+            line-height: 1;
+            font-weight: 400;
+            font-size: 2.5em;
+            color: #FFFFFF;
+
+            /* Responsive pour le mobile */
+
+            @media (max-width: 575.98px){
+                font-size: 2em;
+            }
+
+            /* Image du bouton */
+
+            img{
+                width: 44px;
+                height: 44px;
+                margin-right: 0.5rem;
+
+                /* Responsive pour le mobile */
+
+                @media (max-width: 575.98px){
+                    width: 34px;
+                    height: 34px;
+                }
+            }
+
+            /* Texte du bouton */
+
+            span{
+                vertical-align: text-bottom;
+            }
+        }
+    }
+}

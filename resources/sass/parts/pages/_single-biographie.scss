@@ -1,0 +1,246 @@
+/* CSS pour la page d'affichage d'une biographie d'un pilote du site 'Passionné de Formule 1' */
+
+.single-biographie{
+
+    /* Police d'écriture et curseur utilisés sur la page */
+
+    font-family: 'Lato', sans-serif;
+    cursor: context-menu;
+    background-color: #989898;
+    .backBtn{
+
+        /* Bouton de retour sur la page de biographies */
+
+        width: 100%;
+        padding: 1rem 10%;
+
+        /* Responsive pour le mobile */
+
+        @media (max-width: 575.98px){
+            text-align: center;
+        }
+        .btn-single{
+            font-size: 1.5em;
+            color: #241F48;
+        }
+    }
+    .background-image{
+
+        /* Image en arrière plan */
+
+        background-color: #989898;
+        .biographie-contenu{
+
+            /* Contenu de la page single-biographie */
+
+            width: 100%;
+            padding: 5% 10%;
+            .biographie-image-infos-pilote{
+
+                /* Entête de la section */
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                /* Responsive mobile et tablette */
+
+                @media (max-width: 991.98px){
+                    flex-direction: column;
+                    gap: 25px;
+                }
+                .image-biographie{
+
+                    /* Image de la biographie */
+
+                    width: 40%;
+
+                    /* Responsive pour le mobile */
+
+                    @media (max-width: 575.98px){
+                        width: 95%
+                    }
+
+                    /* Responsive pour la tablette */
+
+                    @media (min-width: 575.98px) AND (max-width: 991.98px){
+                        width: 80%
+                    }
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .infos-pilote-biographie{
+
+                    /* Infos du pilote cité dans la biographie */
+                    
+                    width: 50%;
+                    padding: 0;
+
+                    /* Responsive pour le mobile */
+
+                    @media (max-width: 575.98px){
+                        width: 95%;
+                    }
+
+                    /* Responsive pour la tablette */
+
+                    @media (min-width: 575.98px) AND (max-width: 991.98px){
+                        width: 80%;
+                    }
+
+                    @media (min-width: 992px) AND (max-width: 1199.98px){
+                        width: 52.5%;
+                    }
+                    li{
+                        list-style: none;
+                        font-size: 1.25em;
+                        color: #241F48;
+                    }
+
+                    /* Nom et Prénom du pilote autobiographié */
+
+                    .nom-prenom-pilote{
+                        /* Responsive mobile et tablette */
+
+                        @media (max-width: 991.98px){
+                            margin-bottom: 1rem;
+                            text-align: center;
+                        }
+                    }
+
+                    /* Dates de naissance et décès qui peut être éventuelle */
+
+                    .naissance, .deces{
+                        display: flex;
+                        align-items: center;
+
+                        /* Responsive le mobile */
+
+                        @media (max-width: 575.98px){
+                            margin: 1rem 0;
+                            flex-direction: column;
+                            text-align: center;
+                        }
+                        span{
+                            width: 50%;
+                            font-size: 1.25em;
+                            color: #241F48;
+
+                            /* Responsive le mobile */
+
+                            @media (max-width: 575.98px){
+                                width: 100%;
+                            }
+                        }
+                        .date-naissance, .date-deces{
+                            width: 50%;
+
+                            /* Responsive le mobile */
+
+                            @media (max-width: 575.98px){
+                                width: 100%;
+                            }
+                            .date{
+                                p{
+                                    margin: 0;
+                                    text-align: end;
+
+                                    /* Responsive le mobile */
+
+                                    @media (max-width: 575.98px){
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    /* Carrière en F1 du pilote */
+
+                    .carriere-f1{
+                        display: flex;
+                        align-items: center;
+
+                        /* Responsive le mobile */
+
+                        @media (max-width: 575.98px){
+                            margin: 1rem 0;
+                            flex-direction: column;
+                            text-align: center;
+                        }
+                        span{
+                            width: 50%;
+                            font-size: 1.25em;
+                            color: #241F48;
+
+                            /* Responsive le mobile */
+
+                            @media (max-width: 575.98px){
+                                width: 100%;
+                            }
+                        }
+                        .carriere{
+                            width: 50%;
+                            text-align: end;
+
+                            /* Responsive le mobile */
+
+                            @media (max-width: 575.98px){
+                                width: 100%;
+                                text-align: center;
+                            }
+                        }
+                    }
+
+                    /* Réseaux sociaux du pilote (site web, pages, compte twtier, insta, ect.) */
+
+                    .reseaux-sociaux{
+                        margin: 1rem 0;
+                        display: flex;
+                        align-items: center;
+
+                        /* Responsive mobile et tablette */
+
+                        @media (max-width: 991.98px){
+                            flex-direction: column;
+                            text-align: center;
+                        }
+                        span{
+                            width: 50%;
+                            font-size: 1.25em;
+                            color: #241F48;
+
+                            /* Responsive mobile et tablette */
+
+                            @media (max-width: 991.98px){
+                                width: 100%;
+                            }
+                        }
+                        .reseaux{
+                            width: 50%;
+                            text-align: end;
+
+                            /* Responsive mobile et tablette */
+
+                            @media (max-width: 991.98px){
+                                width: 100%;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+            .texte-biographie{
+
+                /* Texte relatif au pilote */
+
+                margin: 2rem 0;
+                font-size: 1.25em;
+                color: #241F48;
+                text-align: justify;
+            }
+        }
+    }
+}

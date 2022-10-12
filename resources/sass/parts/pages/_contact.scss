@@ -1,0 +1,220 @@
+/* CSS pour la page de contact du site 'Passionné de Formule 1' */
+
+.contact{
+
+    /* Police d'écriture et curseur utilisés sur la page */
+
+    font-family: 'Lato', sans-serif;
+    cursor: context-menu;
+
+    /* Couleur de l'arrière plan */
+
+    background-color: #54514E;
+    
+    /* Message concernant l'envoi du formulaire */
+
+    .contact-message{
+        .alert{
+            margin-bottom: 0;
+            p{
+                margin-bottom: 0;
+                text-align: center;
+            }
+        }
+    }
+    .form-contact{
+
+        /* Contenu du formulaire de contact */
+
+        width: 100%;
+        padding: 5% 10%;
+        .form-contenu{
+
+            /* Positionnement des champs du formulaire sur la page */
+
+            display: flex;
+            align-items: start;
+
+            /* Responsive mobile et tablette */
+
+            @media (max-width: 991.98px){
+                flex-direction: column;
+            }
+            .form-contact-champs-infos{
+
+                /* Positionnement des champs 'infos' de la personne nous contactant */
+
+                .form-contact-champ-nom, .form-contact-champ-prenom, .form-contact-champ-adresse-mail, .form-contact-champ-telephone{
+                    .label-champ{
+                        margin: 0;
+                        color: #FFFFFF;
+                        font-size: 1.5em;
+                        i{
+                            font-style: normal;
+                            color: #E00501;
+                        }
+                    }
+                    #nom, #prenom, #adresse_mail, #telephone{
+                        margin: 0.5rem 0;
+                        background-color: #989898;
+                        border-color: #2A2622;
+                        color: #FFFFFF;
+                        &:focus{
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+            .form-contact-champ-message{
+
+                /* Positionnement du champ 'message' du formulaire */
+
+                .label-champ{
+                    margin: 0;
+                    text-align: center;
+                    color: #FFFFFF;
+                    font-size: 1.5em;
+                    i{
+                        font-style: normal;
+                        color: #E00501;
+                    }
+                }
+                #message{
+                    margin-top: 0.5rem;
+                    background-color: #989898;
+                    border-color: #2A2622;
+                    color: #FFFFFF;
+                    resize: none;
+                    &:focus{
+                        box-shadow: none;
+                    }
+                    &::placeholder{
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+
+        /* Champs obligatoires */
+
+        .text-obligatoire{
+            margin: 0;
+            padding-top: 2rem;
+            color: #FFFFFF;
+            font-size: 1.5em;
+            i{
+                font-style: normal;
+                color: #E00501;
+            }
+        }
+
+        /* Conditions RGPD pour le formulaire */
+
+        .contact-rgpd{
+            width: 70%;
+            margin: auto;
+            padding-top: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+
+            /* Responsive pour le mobile */
+
+            @media (max-width: 575.98px){
+                flex-direction: column;
+            }
+            .check-rgpd{
+                #rgpd{
+                    width: 25px;
+                    height: 25px;
+                    background-color: #989898;
+                    border-color: #2A2622;
+                    cursor: url("/images/bouton_icones/cursorBtn.png"), context-menu;
+                    &:focus{
+                        box-shadow: none;
+                    }
+                    &:checked{
+                        background-color: #E00501;
+                    }
+                }
+                .rgpd-obligatoire{
+                    font-size: 1.5em;
+                    font-style: normal;
+                    color: #E00501;
+                }
+            }
+            .text-rgpd{
+                width: 90%;
+                margin: 0;
+                text-align: justify;
+                color: #FFFFFF;
+                font-size: 1.5em;
+
+                /* Responsive pour le mobile */
+
+                @media (max-width: 575.98px){
+                    width: 100%;
+                }
+            }
+        }
+
+        /* Bouton d'envoi du formulaire */
+
+        .contact-envoy{
+            display: flex;
+            justify-content: center;
+            padding-top: 2rem;
+            .btn-envoy{
+
+                /* Bouton */
+
+                width: 250px;
+                height: 72px;
+                border: 1px solid transparent;
+                border-radius: 0.5rem;
+                text-align: center;
+                text-decoration: none;
+                cursor: url("/images/bouton_icones/cursorBtn.png"), pointer;
+                background-color: #E00501;
+                font-weight: 400;
+                font-size: 2em;
+                color: #FFFFFF;
+                outline: none;
+
+                /* Effet sur le bouton */
+
+                &:hover{
+                    animation: jelly 0.5s;
+                }
+                @keyframes jelly{
+                    0%, 100% {
+                        transform: scale(1, 1);
+                    }
+                    25% {
+                        transform: scale(0.9, 1.1);
+                    }
+                    50% {
+                        transform: scale(1.1, 0.9);
+                    }
+                    75%{
+                        transform: scale(0.95, 1.05);
+                    }
+                }
+
+                /* Texte et image du bouton */
+
+                span{
+                    margin: 0 0.5rem;
+                    vertical-align: middle;
+                }
+                img{
+                    width: 68px;
+                    height: auto;
+                    @media (max-width: 575.98px){
+                        width: 58px;
+                    }
+                }
+            }
+        }
+    }
+}

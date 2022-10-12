@@ -1,0 +1,87 @@
+/* CSS pour la page des photos du site 'Passionné de Formule 1' */
+
+.photos{
+
+    /* Police d'écriture et curseur utilisés sur la page */
+
+    font-family: 'Lato', sans-serif;
+    cursor: context-menu;
+    .background-image{
+
+        /* Image en arrière plan */
+
+        background-color: #54514E;
+        .photos-contenu{
+
+            /* Contenu de la page de photos */
+
+            width: 100%;
+            padding: 5% 10%;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+
+            /* Responsive pour le mobile */
+
+            @media (max-width: 575.98px){
+                padding: 5% 2.5%;
+            }
+            .photo-card{
+
+                /* Définition du positionnement de la carte de photo sur la page */
+
+                display: flex;
+                flex: 1 1 33%;
+
+                /* Responsive pour le mobile */
+
+                @media (max-width: 575.98px){
+                    flex: 1 1 100%;
+                }
+
+                /* Responsive pour la tablette */
+
+                @media (min-width: 576px) AND (max-width: 991.98px){
+                    flex: 1 1 50%;
+                }
+                .container-card{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 2rem;
+                    .image-photo{
+
+                        /* Photo */
+
+                        width: 100%;
+                        margin: 1.5rem auto;
+                    }
+                    .link-card{
+
+                        /* Lien vers la page single-photo */
+
+                        width: 100%;
+                        text-align: center;
+                        text-decoration: none;
+                        font-size: 1.5em;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Positonnement de la barre de pagination sur la page */
+
+    .photos-pagination{
+        background-color: #54514E;
+        .pagination-custom{
+
+            /* Pagination pour les photos */
+    
+            margin: auto;
+            padding: 2rem 0;
+        }
+    }
+}

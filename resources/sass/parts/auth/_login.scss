@@ -1,0 +1,129 @@
+/* CSS du formulaire de login au site 'Passionné de Formule 1' */
+
+.backgroundLogin{
+
+    /* Arrière plan de la page de connexion administrateur */
+    
+    background-image: url('/images/Fond_page_de_connexion_admin.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .loginContainer{
+
+        /* Section du formulaire */
+    
+        padding: 12.375% 0;
+        font-family: 'Lato', sans-serif;
+        .row{
+            --bs-gutter-x: 0 !important;
+            --bs-gutter-y: 0 !important;
+            .col-md-8{
+
+                /* Message d'erreur si les identifiants sont incorrectes */
+
+                .login-message{
+                    .alert{
+                        margin-bottom: 0;
+                        border-radius: 0.25rem 0.25rem 0 0;
+                    }
+                }
+                .card{
+                    background-color: rgba(152, 152, 152, 0.7);
+                    border-color: #2A2622;
+                    border-radius: 0 0 0.25rem 0.25rem;
+                    .card-header{
+                    
+                        /* Entête du formulaire */
+                        
+                        border-radius: 0;
+                        background-color: #241F48;
+                        font-weight: 400;
+                        font-size: 1.5em;
+                        line-height: 1;
+                        color: white;
+                        cursor: context-menu;
+                    }
+                    .card-body{
+                        form{
+
+                            /* Corps du formulaire */
+
+                            .mb-3{
+                                justify-content: center;
+                                label{
+                                    color: #241F48;
+                                    font-weight: 400;
+                                    font-size: 1.5em;
+                                    line-height: 1;
+                                }
+                                .col-md-6{
+                                    #password, #email{
+        
+                                        /* Champs Email et Mot de Passe */
+        
+                                        background-color: #2A2622;
+                                        border-color: #E00501;
+                                        color: white;
+                                        &:focus{
+                                            box-shadow: 0 0 0 0.25rem rgb(223, 110, 106);
+                                        }
+                                    }
+                                }
+                                .col-md-4{
+                                    display: flex;
+                                    justify-content: center;
+                                    #remember{
+        
+                                        /* Coche  Se Souvenir de Moi */
+        
+                                        background-color: #2A2622;
+                                        border-color: #E00501;
+                                        &:focus{
+                                            box-shadow: none;
+                                        }
+                                        &:checked{
+                                            background-color: #E00501;
+                                            border-color: #E00501;
+                                        }
+                                    }
+                                }
+                            }
+                            .mb-0{
+                                justify-content: center;
+                                .col-md-12{
+                                    button{
+        
+                                        /* Bouton de validation du formulaire */
+        
+                                        background-color: #241F48;
+                                        border-color: #241F48;
+                                        font-weight: 400;
+                                        font-size: 1.5em;
+                                        line-height: 1;
+                                        color: white;
+                                        &:focus{
+                                            box-shadow: 0 0 0 0.25rem rgb(35, 144, 189);
+                                        }
+                                    }
+                                    .btn-link{
+        
+                                        /* Lien Mot de Passe Oublié */
+        
+                                        text-decoration: none;
+                                        font-weight: 400;
+                                        font-size: 1.5em;
+                                        line-height: 1;
+                                        color: #241F48;
+                                        &:focus{
+                                            box-shadow: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

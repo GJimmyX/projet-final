@@ -1,0 +1,152 @@
+/* CSS pour la page des classements du site 'Passionné de Formule 1' */
+
+.classements{
+
+    /* Police d'écriture et curseur utilisés sur la page */
+
+    font-family: 'Lato', sans-serif;
+    cursor: context-menu;
+    .background-image{
+
+        /* Image en arrière plan */
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('/images/Fond_page_classements_visiteur.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #54514E;
+        .classements-contenu{
+
+            /* Contenu de la page de classements */
+            
+            width: 100%;
+            margin: 2% 0;
+            padding: 0 10%;
+            display: flex;
+            justify-content: space-between;
+
+            /* Responsive mobile et tablette */
+
+            @media (max-width: 991.98px){
+                flex-direction: column;
+                align-items: center;
+            }
+            .classement-pilotes, .classement-ecuries{
+
+                /* Définition du positionnement des classements 'pilotes' et 'écuries' sur la page */
+
+                width: 40%;
+                margin: 0;
+                padding: 1%;
+                border: 1px solid #2A2622;
+                border-radius: 10px;
+                background-color: rgba(#989898, 0.3);
+
+                /* Responsive mobile et tablette */
+
+                @media (max-width: 991.98px){
+                    width: 100%;
+                    margin: 2rem 0;
+                }
+
+                /* Responsive pour la tablette */
+
+                @media (min-width: 992px) AND (max-width: 1199.98px){
+                    width: 45%;
+                }
+
+                /* Organisation des lignes de chaque classement */
+
+                .ligne-pilote, .ligne-ecurie{
+                    margin: 0.5rem 0;
+                    padding: 1rem 0.5rem;
+                    border: 1px solid #2A2622;
+                    border-radius: 19px;
+                    list-style: none;
+                    background-color: #54514E;
+                    color: #FFFFFF;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    /* Responsive pour le mobile */
+
+                    @media (max-width: 575.98px){
+                        flex-direction: column;
+                        gap: 10px;
+                    }
+
+                    /* Drapeaux et écussons écurie */
+
+                    img{
+                        width: 65px;
+                        height: 65px;
+                    }
+
+                    /* Nom du pilote pour le classmeent 'pilotes' */
+
+                    .pilote-nom{
+                        width: 30%;
+                        margin: 0;
+                        text-align: center;
+                    }
+
+                    /* Nombre de points du pilote pour le classmeent 'pilotes' */
+
+                    .pilote-points{
+                        width: 15%;
+                        margin: 0;
+                        text-align: end;
+
+                        /* Responsive pour le mobile */
+
+                        @media (max-width: 575.98px){
+                            text-align: center;
+                        }
+                    }
+
+                    /* Classement des écuries */
+
+                    .ecurie-points{
+                        width: 100%;
+                        margin: 0;
+                        p{
+                            margin: 0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            /* Responsive pour le mobile */
+
+                            @media (max-width: 575.98px){
+                                flex-direction: column;
+                                gap: 10px;
+                            }
+
+                            /* Nom de l'écurie et son nombre de points */
+
+                            .nom-ecurie, .points-ecurie{
+                                width: 25%;
+                            }
+                            .nom-ecurie{
+                                text-align: center;
+                            }
+                            .points-ecurie{
+                                text-align: end;
+
+                                /* Responsive pour le mobile */
+
+                                @media (max-width: 575.98px){
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

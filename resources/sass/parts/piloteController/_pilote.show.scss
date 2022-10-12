@@ -1,0 +1,164 @@
+/* CSS pour la page d'affichage des pilotes du gestionnaire de posts du site 'Passionné de Formule 1' */
+
+.show-admin-pilotes{
+
+    /* Police d'écriture et curseur utilisés sur la page */
+
+    font-family: 'Lato', sans-serif;
+    cursor: context-menu;
+    .show-titre-btn{
+
+        /* Titre de la page et bouton de retour sur l'accueil administrateur */
+        
+        padding: 1% 0;
+        --bs-gutter-x: 0 !important;
+        --bs-gutter-y: 0 !important;
+        background-color: #54514E;
+        @media (max-width: 575.98px){
+            text-align: center;
+        }
+        .titre-btn-show{
+            .btn-show{
+
+                /* Bouton */
+
+                border: 1px solid transparent;
+                margin: 0 0 0 16px;
+                padding: 0.375rem 0.75rem;
+                border-radius: 0.5rem;
+                text-align: center;
+                text-decoration: none;
+                vertical-align: middle;
+                cursor: pointer;
+                background-color: #E00501;
+                line-height: 2;
+                font-weight: 400;
+                font-size: 2em;
+                color: #FFFFFF;
+
+                /* Responsive pour le mobile */
+
+                @media (max-width: 575.98px){
+                    margin: 0;
+                    font-size: 1.5em;
+                }
+
+                /* Image du bouton */
+
+                img{
+                    width: 34px;
+                    height: 34px;
+                    vertical-align: text-bottom;
+
+                    /* Responsive pour le mobile */
+
+                    @media (max-width: 575.98px){
+                        width: 26px;
+                        height: 26px;
+                    }
+                }
+            }
+            .titre-show{
+
+                /* Titre */
+
+                width: 95%;
+                margin: 0 auto 1rem;
+                text-align: center;
+                line-height: 1;
+                font-weight: 500;
+                font-size: 2.5em;
+                color: #FFFFFF;
+
+                /* Responsive pour le mobile */
+
+                @media (max-width: 575.98px){
+                    margin: 1rem auto;
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+    .background-show{
+
+        /* Arrière plan */
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #54514E;
+        .show-container{
+
+            /* Définition du postionnement du contenu sur la page */
+
+            width: 80%;
+            margin: 2rem 0;
+            background-color: rgba(#54514E, 0.3);
+            border-radius: 8px;
+            border: 1px solid #2A2622;
+
+            /* Responsive pour le mobile */
+
+            @media (max-width: 575.98px){
+                width: 95%;
+            }
+            .row{
+                --bs-gutter-x: 0 !important;
+                --bs-gutter-y: 0 !important;
+                width: 75%;
+                margin: auto;
+
+                /* Responsive pour le mobile */
+
+                @media (max-width: 575.98px){
+                    width: 95%;
+                }
+                .show-nom, .show-nationalite-drapeau, .show-points, .show-img_ecurie{
+
+                    /* Postionnement des éléments de la page (Nom du pilote, Pays et drapeau de nationalite, Points du pilote et Ecusson de l'écurie du pilote) */
+
+                    margin: 1.735rem auto;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    /* Responsive mobile et tablette */
+
+                    @media (max-width: 991.98px){
+                        flex-direction: column;
+                        gap: 22px;
+                    }
+
+                    /* Titre de chaque section */
+
+                    strong{
+                        font-size: 1.5em;
+                        color: #FFFFFF;
+
+                        /* Responsive mobile et tablette */
+
+                        @media (max-width: 991.98px){
+                            text-align: center;
+                        }
+                    }
+
+                    /* Nom du pilote, sa nationalité et son nombre de points au classement 'pilotes' */
+
+                    .nom-pilote, .nationalite-pilote, .points-pilote{
+                        margin: 0;
+                        text-align: justify;
+                        font-size: 1.5em;
+                        color: #FFFFFF;
+                    }
+
+                    /* Drapeau de nationalité du pilote et écusson de son écurie */
+
+                    .drapeau-pilote, .ecurie-pilote{
+                        width: 65px;
+                        height: 65px;
+                    }
+                }
+            }
+        }
+    }
+}

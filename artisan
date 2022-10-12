@@ -1,0 +1,40 @@
+#!/usr/bin/env php
+<?php
+
+define('LARAVEL_START', microtime(true));
+
+/*
+|--------------------------------------------------------------------------
+| Enregistrement de Autoload.php
+|--------------------------------------------------------------------------
+|
+*/
+
+require __DIR__.'/vendor/autoload.php';
+
+$app = require_once __DIR__.'/bootstrap/app.php';
+
+/*
+|--------------------------------------------------------------------------
+| Lancement de l'application avec Artisan
+|--------------------------------------------------------------------------
+|
+*/
+
+$kernel = $app->make(Illuminate\Contracts\Console\Kernel::class);
+
+$status = $kernel->handle(
+    $input = new Symfony\Component\Console\Input\ArgvInput,
+    new Symfony\Component\Console\Output\ConsoleOutput
+);
+
+/*
+|--------------------------------------------------------------------------
+| Arrêt de l'application
+|--------------------------------------------------------------------------
+|
+*/
+
+$kernel->terminate($input, $status);
+
+exit($status);

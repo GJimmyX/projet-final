@@ -1,0 +1,198 @@
+/* CSS pour la page d'affichage des biographies du gestionnaire de posts du site 'Passionné de Formule 1' */
+
+.show-admin-biographies{
+
+    /* Police d'écriture et curseur utilisés sur la page */
+
+    font-family: 'Lato', sans-serif;
+    cursor: context-menu;
+    .show-titre-btn{
+
+        /* Titre de la page et bouton de retour sur l'accueil administrateur */
+        
+        padding: 1% 0;
+        --bs-gutter-x: 0 !important;
+        --bs-gutter-y: 0 !important;
+        background-color: #54514E;
+        @media (max-width: 575.98px){
+            text-align: center;
+        }
+        .titre-btn-show{
+            .btn-show{
+
+                /* Bouton */
+
+                border: 1px solid transparent;
+                margin: 0 0 0 16px;
+                padding: 0.375rem 0.75rem;
+                border-radius: 0.5rem;
+                text-align: center;
+                text-decoration: none;
+                vertical-align: middle;
+                cursor: pointer;
+                background-color: #E00501;
+                line-height: 2;
+                font-weight: 400;
+                font-size: 2em;
+                color: #FFFFFF;
+
+                /* Responsive pour le mobile */
+
+                @media (max-width: 575.98px){
+                    margin: 0;
+                    font-size: 1.5em;
+                }
+
+                /* Image du bouton */
+
+                img{
+                    width: 34px;
+                    height: 34px;
+                    vertical-align: text-bottom;
+
+                    /* Responsive pour le mobile */
+
+                    @media (max-width: 575.98px){
+                        width: 26px;
+                        height: 26px;
+                    }
+                }
+            }
+            .titre-show{
+
+                /* Titre */
+
+                width: 95%;
+                margin: 0 auto 1rem;
+                text-align: center;
+                line-height: 1;
+                font-weight: 500;
+                font-size: 2.5em;
+                color: #FFFFFF;
+
+                /* Responsive pour le mobile */
+
+                @media (max-width: 575.98px){
+                    margin: 1rem auto;
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+    .background-show{
+
+        /* Arrière plan */
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #54514E;
+        .show-container{
+
+            /* Définition du postionnement du contenu sur la page */
+
+            width: 80%;
+            margin: 2rem 0;
+            border-radius: 8px;
+            border: 1px solid #2A2622;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            /* Responsive pour le mobile */
+
+            @media (max-width: 575.98px){
+                width: 95%;
+            }
+            .row{
+                --bs-gutter-x: 0 !important;
+                --bs-gutter-y: 0 !important;
+                width: 95%;
+                margin: 2.5% auto;
+                border-radius: 8px;
+                background-color: rgba(#989898, 0.7);
+                .show-nom-prenom-pilote, .show-texte-biographie, .show-image-biographie{
+
+                    /* Postionnement des éléments de la page (Nom & Prénom du pilote, texte et image de la biographie) */
+
+                    width: 95%;
+                    margin: 1.735rem auto;
+                    display: flex;
+                    align-items: center;
+                    gap: 22px;
+
+                    /* Responsive monile et tablette */
+
+                    @media (max-width: 1023.98px){
+                        flex-direction: column;
+                    }
+                    strong{
+                        width: 33%;
+                        font-size: 1.5em;
+                        color: #FFFFFF;
+
+                        /* Responsive pour le mobile */
+
+                        @media (max-width: 575.98px){
+                            font-size: 1.5em;
+                        }
+
+                        /* Responsive pour la tablette */
+
+                        @media (min-width: 1024px) AND (max-width: 1359.98px){
+                            width: 50%;
+                        }
+
+                        /* Responsive mobile et tablette */
+
+                        @media (max-width: 1023.98px){
+                            width: 100%;
+                            text-align: center;
+                        }
+                    }
+
+                    /* Nom & Prénom du pilote, texte de la biographie */
+
+                    .nom-prenom-pilote, .texte-biographie{
+                        margin: 0;
+                        text-align: justify;
+                        font-size: 1.5em;
+                        color: #FFFFFF;
+
+                        /* Responsive mobile et tablette */
+
+                        @media (max-width: 1023.98px){
+                            width: 100%;
+                            text-align: center;
+                        }
+
+                        /* Responsive pour la tablette */
+
+                        @media (min-width: 1024px){
+                            width: 67%;
+                        }
+                    }
+
+                    /* Image de la biographie */
+
+                    .image-biographie{
+                        width: 50%;
+                        height: 100%;
+
+                        /* Responsive pour le mobile */
+
+                        @media (max-width: 575.98px){
+                            width: 100%;
+                        }
+
+                        /* Responsive pour la tablette */
+
+                        @media (min-width: 576px) AND (max-width: 991.98px){
+                            width: 75%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

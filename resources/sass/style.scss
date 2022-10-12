@@ -1,0 +1,566 @@
+/* Import du CSS pour 'header.blade.php' */
+
+@import 'parts/layouts/header';
+
+/* Import du CSS pour 'login.blade.php' */
+
+@import 'parts/auth/login';
+
+/* Import du CSS pour 'email.blade.php' */
+
+@import 'parts/auth/password.email';
+
+/* Import du CSS pour le crud 'ArticleController' */
+
+@import 'parts/articleController/crud-article.scss';
+
+/* Import du CSS pour le crud 'PiloteController' */
+
+@import 'parts/piloteController/crud-pilote.scss';
+
+/* Import du CSS pour le crud 'BiographieController' */
+
+@import 'parts/biographieController/crud-biographie.scss';
+
+/* Import du CSS pour le crud 'PhotoController' */
+
+@import 'parts/photoController/crud-photo.scss';
+
+/* Import du CSS pour 'pagination-custom.php' */
+
+@import 'parts/layouts/pagination-custom';
+
+/* Import du CSS pour 'classements.php' */
+
+@import 'parts/pages/classements';
+
+/* Import du CSS pour 'biographies.php' */
+
+@import 'parts/pages/biographies';
+
+/* Import du CSS pour 'single.biographie.php' */
+
+@import 'parts/pages/single-biographie';
+
+/* Import du CSS pour 'photos.php' */
+
+@import 'parts/pages/photos';
+
+/* Import du CSS pour 'single.photo.php' */
+
+@import 'parts/pages/single-photo';
+
+/* Import du CSS pour 'contact.php */
+
+@import 'parts/pages/contact';
+
+/* Import du CSS pour 'recherche.php' */
+
+@import 'parts/pages/recherche';
+
+/* Import du CSS pour 'mentions-legales.php' */
+
+@import 'parts/pages/mentions-legales';
+
+/* Import du CSS pour 'footer.blade.php' */
+
+@import 'parts/layouts/footer';
+
+/* CSS pour 'index.blade.php' */
+
+.accueil{
+
+    /* Message lors de la déconnexion de l'admin */
+
+    .index-message{
+        .alert{
+            margin-bottom: 0;
+        }
+    }
+
+    /* Slider d'image de la page d'accueil visiteur */
+
+    #slider{
+        position: relative;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+
+        /* Style des bouton précédent et suivant */
+
+        #prev, #next{
+            position: absolute;
+            top: 45%;
+            z-index: 1;
+            font-size: 3em;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        /* Positionnement du bouton précédent */
+
+        #prev{
+            left: 10px;
+            cursor: url("/images/bouton_icones/cursorBtn.png"), context-menu;
+        }
+
+        /* Positionnement du slider */
+
+        .slider-accueil{
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            .slider-item{
+                width: 100%;
+                height: 100%;
+                > * {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+
+        /* Positionnement du bouton suivant */
+
+        #next{
+            right: 10px;
+            cursor: url("/images/bouton_icones/cursorBtn.png"), context-menu;
+        }
+    }
+    .background-image{
+
+        /* Image d'arrière plan du site */
+
+        background-image: url('/images/Fond_page_accueil_visiteur.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        .accueil-contenu{
+
+            /* Contenu de la page d'accueil */
+
+            width: 100%;
+            padding: 2% 10%;
+            top: 0;
+            .section_passion{
+
+                /* Section passion */
+
+                border: 1px solid #2A2622;
+                border-radius: 10px;
+                background-color: rgba(#989898, 0.3);
+                color: #FFFFFF;
+                cursor: context-menu;
+                margin-bottom: 5rem;
+                .presentation, .pilotesFav, .ecuriesFav{
+
+                    /* Sections Présentation, Pilotes favoris et Écuries favorites */
+
+                    width: 90%;
+                    margin: 2rem auto;
+                    font-family: 'Lato', sans-serif;
+                    
+                    /* Titre de chaque section (Présentation, Pilotes favoris et écuries favorites) */
+
+                    .titre-presentation, .titre-pilotesFav, .titre-ecuriesFav{
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 2.25em;
+
+                        /* Responsive pour le mobile */
+
+                        @media (max-width: 575.98px){
+                            text-align: center;
+                        }
+                    }
+
+                    /* Contenu de chaque section (Présentation, Pilotes favoris et écuries favorites) */
+
+                    .contenu-presentation, .contenu-pilotesFav, .contenu-ecuriesFav{
+                        margin: 0;
+                        font-weight: 400;
+                        font-size: 1.33em;
+                        text-align: justify;
+                    }
+
+                    /* Boutons pour écouter la sonorité d'un V10 et voir l'intro officielle du championnat 2022 de Formule 1 */
+
+                    .boutons-son-intro{
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 2rem;
+                        gap: 5rem;
+
+                        /* Responsive pour le mobile */
+
+                        @media (max-width: 575.98px){
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 0;
+                        }
+
+                        /* Style bouton intro championnat 2022 de Formule 1 */
+                        /* Style bouton sonorité d'un V10 */
+
+                        .intro-2022, .sonorite-v10{
+                            z-index: 1;
+                            position: relative;
+                            font-size: 1.5em;
+                            font-family: inherit;
+                            background-color: #E00501;
+                            color: #FFFFFF;
+                            padding: 0.5em 1em;
+                            outline: none;
+                            border: none;
+                            border-radius: 15px;
+
+                            /* Responsive pour le mobile */
+
+                            @media (max-width: 575.98px){
+                                margin: 1rem 0;
+                                padding: 0.5em 3em;
+                            }
+
+                            &:hover{
+                                cursor: url("/images/bouton_icones/cursorBtn.png"), pointer;
+                            }
+                        }
+
+                        /* Affichage du container média de chaque bouton */
+
+                        .modal{
+                            z-index: 3;
+                            display: none;
+                            padding: 1%;
+                            position: fixed;
+                            box-sizing: border-box;
+                            left: 0;
+                            top: 0;
+                            width: 100%;
+                            height: 100%;
+                            overflow: auto;
+                            background-color: rgba(0,0,0,0.8);
+                            animation: fade 0.8s;
+                            @keyframes fade{
+                                from{
+                                    opacity: 0.4;
+                                }to{
+                                    opacity: 1;
+                                }
+                            }
+
+                            /* Fermeture du container média de chaque bouton */
+
+                            .modal-button{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 2em;
+                                background-color: #E00501;
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 10px;
+                                cursor: url("/images/bouton_icones/cursorBtn.png"), pointer;
+                                @media (min-width: 1024px){
+                                    transition: 0.8s ease;
+                                }
+                                &:hover{
+                                    @media (min-width: 1024px){
+                                        transition: 0.8s ease;
+                                        background-color: #FFFFFF;
+                                        color: #000000;
+                                    }
+                                }
+                            }
+
+                            /* Contenu du container média de chaque bouton */
+
+                            .modal-content{
+                                width: 80%;
+                                margin: auto;
+                                height: auto;
+                                @media (max-width: 1399.98px){
+                                    width: 70%;
+                                }
+                            }
+
+                            /* Image de la modal de la sonorité du V10 */
+
+                            .img-modal{
+                                width: 25%;
+                                height: auto;
+                                margin: auto;
+                                display: flex;
+                            }
+                        }
+
+                        /* Effet sur les boutons */
+                        
+                        .intro-2022::before, .sonorite-v10::before{
+                            content: '';
+                            z-index: -1;
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            border: 4px solid #E00501;
+                            border-radius: 15px;
+                            transform-origin: center;
+                            transform: scale(1);
+                        }
+
+                        .intro-2022:hover::before, .sonorite-v10:hover::before{
+                            transition: all 0.75s ease-in-out;
+                            transform-origin: center;
+                            transform: scale(2.25);
+                            opacity: 0;
+                        }
+                    }
+
+                    /* Section des classements de pilotes préférés */
+
+                    .classement-pilotesFav{
+                        display: flex;
+                        justify-content: center;
+                        margin: 2rem 0;
+                        gap: 50px;
+
+                        /* Responsive pour le mobile */
+
+                        @media (max-width: 575.98px){
+                            flex-direction: column;
+                            align-items: center;
+                        }
+
+                        /* Responsive pour la tablette */
+
+                        @media (min-width: 576px) AND (max-width: 991.98px){
+                            gap: 25px;
+                        }
+
+                        .pilotesAncienneGen, .pilotesNouvelleGen{
+                            .classement-titre{
+
+                                /* Titre */
+
+                                font-family: 'Open Sans', sans-serif;
+                                font-size: 2.25em;
+                                @media (max-width: 1399.98px){
+                                    font-size: 1.75em;
+                                    text-align: center;
+                                }
+                            }
+                            .classement-pilotesAncienneGen, .classement-pilotesNouvelleGen{
+
+                                /* Classement pilotes ancienne et nouvelle génération */
+
+                                padding: 0;
+                                margin: 0;
+                                text-align: center;
+                                .pilote-item{
+                                    list-style: none;
+                                    font-weight: 400;
+                                    font-size: 1.33em;
+                                }
+                            }
+                        }
+                    }
+
+                    /* Section du classement des écuries favorites */
+
+                    .classement-ecuriesFav{
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 2rem;
+                        .ecuriesFavAllTime{
+                            .classement-titre{
+                                font-weight: 500;
+                                font-size: 2.25em;
+
+                                /* Responsive mobile et tablette */
+
+                                @media (max-width: 991.98px){
+                                    text-align: center;
+                                }
+                            }
+                            .classement-ecuriesFavAllTime{
+                                padding: 0;
+                                margin: 0;
+                                text-align: center;
+                                .ecurie-item{
+                                    list-style: none;
+                                    font-weight: 400;
+                                    font-size: 1.33em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .section-a-propos{
+
+                /* Section A propos */
+
+                border: 1px solid #2A2622;
+                border-radius: 10px;
+                background-color: rgba(#989898, 0.3);
+                color: #FFFFFF;
+                cursor: context-menu;
+                .a-propos{
+
+                    /* Carte A propos de Moi */
+                    
+                    display: flex;
+                    align-items: center;
+                    width: 90%;
+                    margin: 2rem auto;
+                    font-family: 'Lato', sans-serif;
+                    gap: 50px;
+
+                    /* Responsive mobile et tablette */
+
+                    @media (max-width: 1199.98px){
+                        flex-direction: column;
+                    }
+
+                    /* Image de la section */
+
+                    .image-a-propos{
+                        width: 20%;
+                        height: 100%;
+
+                        /* Responsive mobile et tablette */
+
+                        @media (max-width: 1199.98px){
+                            width: 80%;;
+                            margin: 20px 0 0;
+                        }
+                    }
+                    .container-a-propos{
+                        .titre-a-propos{
+
+                            /* Titre de la section */
+
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: 2.25em;
+                        }
+                        .contenu{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 2rem;
+                            .contenu-a-propos{
+
+                                /* Contenu de la section */
+    
+                                margin: 0;
+                                font-weight: 400;
+                                font-size: 1.33em;
+                                text-align: justify;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .accueil-articles{
+
+        /* Section Articles de l'accueil visiteur */
+
+        display: flex;
+        width: 100%;
+        padding: 2% 10%;
+        top: 0;
+        gap: 5rem;
+        background-color: #989898;
+
+        /* Responsive pour le mobile */
+
+        @media (max-width: 575.98px){
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0;
+        }
+
+        /* Responsive pour la tablette */
+
+        @media (min-width: 576px) AND (max-width: 991.98px){
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 2.5rem;
+        }
+        @media (min-width: 992px) AND (max-width: 1199.98px){
+            padding: 2% 5%;
+            gap: 2.5rem;
+        }
+
+        .articles-card{
+
+            /* Carte Article dans la section */
+
+            width: 25%;
+            border: 1px solid #2A2622;
+            border-radius: 10px;
+            background-color: #54514E;
+            font-family: 'Lato', sans-serif;
+            cursor: url("/images/bouton_icones/cursorBtn.png"), context-menu;
+
+            /* Responsive pour le mobile */
+
+            @media (max-width: 575.98px){
+                width: 100%;
+                margin: 1rem 0;
+            }
+
+            /* Responsive pour la tablette */
+
+            @media (min-width: 576px) AND (max-width: 991.98px){
+                width: 45%;
+            }
+
+            .container-card{
+
+                /* Contenu de la carte d'actualité */
+
+                width: 90%;
+                padding: 5% 0;
+                margin: auto;
+                color: #FFFFFF;
+                .entete-card{
+
+                    /* Entête de la carte avec le titre et la date de publication */
+
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .titre-card, .date-card p{
+                        margin: 0;
+                        font-family: 'Open Sans', sans-serif;
+                        font-weight: 800;
+                        font-size: 1rem;
+                    }
+                }
+                .contenu-card{
+
+                    /* Contenu de l'article */
+
+                    margin: 1rem 0;
+                    font-weight: 400;
+                    font-size: 1.25em;
+                    text-align: justify;
+                }
+                .image-card{
+
+                    /* Image de publication */
+
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

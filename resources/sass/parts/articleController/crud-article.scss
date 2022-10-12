@@ -1,0 +1,13 @@
+/* CSS du CRUD 'ArticleController */
+
+/* Import du CSS pour 'article.index.php' */
+
+@import './article.index';
+
+/* Import du CSS pour 'article.show.php' */
+
+@import './article.show';
+
+/* Import du CSS pour 'article.create.php' et 'article.edit.php */
+
+@import './article.edit';
