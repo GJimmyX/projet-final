@@ -13,7 +13,7 @@ use App\Models\Photo;
 class SearchController extends Controller
 {
 
-    /* Route pour la page de recherche du site 'Passionné de Fomrule 1' */
+    /* Route pour la page de recherche du site 'Passionné de Formule 1' */
 
     public function index(Request $request)
     {
@@ -86,7 +86,7 @@ class SearchController extends Controller
             ->where('titre', 'like', "%{$request->term}%")
             ->orWhere('date', 'like', "%{$request->term}%")
             ->orWhere('contenu', 'like', "%{$request->term}%")
-        ->get();
+        ->get('titre');
 
         /* Variable pour les Biographies */
 
@@ -97,41 +97,41 @@ class SearchController extends Controller
             ->orWhere('date_deces', 'like', "%{$request->term}%")
             ->orWhere('carriere', 'like', "%{$request->term}%")
             ->orWhere('reseaux', 'like', "%{$request->term}%")
-        ->get();
+        ->get('nom_prenom_pilote');
 
         /* Variable pour les pilotes */
 
         $pilotes = Pilote::query()
             ->where('nom_pilote', 'like', "%{$request->term}%")
             ->orWhere('nationalite', 'like', "%{$request->term}%")
-        ->get();
+        ->get('nom_pilote');
 
         /* Variable pour les écuries */
 
         $ecuries = Ecurie::query()
             ->where('nom_ecurie', 'like', "%{$request->term}%")
-        ->get();
+        ->get('nom_ecurie');
 
         /* Variable pour les photos */
 
         $photos = Photo::query()
             ->where('titre_photo', 'like', "%{$request->term}%")
             ->orWhere('desc_photo', 'like', "%{$request->term}%")
-        ->get();
+        ->get('titre_photo');
 
         /* Regroupement des résultats dans une variable tableau $data */
 
         $data = [
-            $articles, // Variable Articles
-            $biographies,  // Variable Biographies
-            $pilotes,  // Variable Pilotes
-            $ecuries, // Variable Ecuries
-            $photos, // Variable Photos
+            'articles' => $articles, // Variable Articles
+            'biographies' => $biographies,  // Variable Biographies
+            'pilotes' => $pilotes,  // Variable Pilotes
+            'ecuries' => $ecuries, // Variable Ecuries
+            'photos' => $photos, // Variable Photos
         ];
 
         /* Affichage de la vue 'Recherche' */
 
-        return response()->json($pilotes);
+        return response()->json($data);
 
     }
 }
