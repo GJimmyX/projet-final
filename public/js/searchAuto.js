@@ -16,16 +16,13 @@ $(document).ready(function() {
                 },
                 dataType: "json",
                 success: function(data){
-                    /* var resp = $.map(data,function(obj){
-                        return obj.nom_pilote;
-                    }); */
 
                     let resp = Object.values(data).flatMap(function(entry) {
                         return entry.map(x => {
                             return Object.values(x)[0];
                         });
                     });
-                    
+
                     response(resp);
                 }
             });
