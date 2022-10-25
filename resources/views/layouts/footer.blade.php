@@ -21,7 +21,7 @@
                         <a href="https://www.facebook.com/" target="_blank" class="fa-brands rsItem"></a>
                         <a href="https://www.twitter.com/" target="_blank" class="fa-brands rsItem"></a>
                         <a href="https://www.instagram.com/" target="_blank" class="fa-brands rsItem"></a>
-                        <a href="https://github.com/GJimmyX" target="_blank" class="fa-brands rsItem"></a>
+                        <a href="https://github.com/GJimmyX/projet-final" target="_blank" class="fa-brands rsItem"></a>
                     </div>
                 </div>
             </div>

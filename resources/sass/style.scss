@@ -62,6 +62,10 @@
 
 @import 'parts/pages/mentions-legales';
 
+/* Import du CSS pour '404.php' */
+
+@import 'parts/errors/404';
+
 /* Import du CSS pour 'footer.blade.php' */
 
 @import 'parts/layouts/footer';
@@ -279,21 +283,32 @@
                             /* Contenu du container média de chaque bouton */
 
                             .modal-content{
-                                width: 80%;
-                                margin: auto;
-                                height: auto;
-                                @media (max-width: 1399.98px){
-                                    width: 70%;
+                                background: transparent;
+                                @media (min-width: 992px){
+                                    width: 80%;
+                                    height: auto;
+                                    margin: auto;
                                 }
-                            }
 
-                            /* Image de la modal de la sonorité du V10 */
+                                /* Intro officielle de la Formule 1 */
 
-                            .img-modal{
-                                width: 25%;
-                                height: auto;
-                                margin: auto;
-                                display: flex;
+                                video{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+
+                                /* Image de la modal de la sonorité du V10 */
+
+                                .img-modal{
+                                    width: 25%;
+                                    height: auto;
+                                    margin: auto;
+                                }
+
+                                audio{
+                                    width: 100%;
+                                    height: 100%;
+                                }
                             }
                         }
 

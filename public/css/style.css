@@ -4338,6 +4338,46 @@ body .ui-autocomplete .ui-menu-item .ui-menu-item-wrapper:hover {
   color: #FFFFFF;
 }
 
+/* Import du CSS pour '404.php' */
+/* CSS pour la page 404 du site 'Passionné de Formule 1' */
+.page-404 {
+  /* Police d'écriture et curseur utilisés sur la page */
+  font-family: "Lato", sans-serif;
+  cursor: context-menu;
+  /* Arrière-plan de la page */
+  padding: 5% 10%;
+  background-color: #54514E;
+}
+.page-404 .img-404 {
+  /* Image de la page 404 */
+  width: 30%;
+  height: auto;
+  margin: auto;
+  padding: 5% 0;
+  /* Responsive pour le mobile */
+  /* Responsive pour la tablette */
+}
+@media (max-width: 575.98px) {
+  .page-404 .img-404 {
+    width: 95%;
+  }
+}
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .page-404 .img-404 {
+    width: 60%;
+  }
+}
+.page-404 .img-404 img {
+  width: 100%;
+  height: 100%;
+}
+.page-404 .titre-404 {
+  /* Titre de la page 404 */
+  margin: 0;
+  text-align: center;
+  color: #FFFFFF;
+}
+
 /* Import du CSS pour 'footer.blade.php' */
 /* CSS du footer du site 'Passionné de Formule 1' */
 footer {
@@ -4647,7 +4687,6 @@ footer .footer-container .col-rs .rsLink .rsItem {
           animation: fade 0.8s;
   /* Fermeture du container média de chaque bouton */
   /* Contenu du container média de chaque bouton */
-  /* Image de la modal de la sonorité du V10 */
 }
 @-webkit-keyframes fade {
   from {
@@ -4689,20 +4728,29 @@ footer .footer-container .col-rs .rsLink .rsItem {
   }
 }
 .accueil .background-image .accueil-contenu .section_passion .presentation .boutons-son-intro .modal .modal-content, .accueil .background-image .accueil-contenu .section_passion .pilotesFav .boutons-son-intro .modal .modal-content, .accueil .background-image .accueil-contenu .section_passion .ecuriesFav .boutons-son-intro .modal .modal-content {
-  width: 80%;
-  margin: auto;
-  height: auto;
+  background: transparent;
+  /* Intro officielle de la Formule 1 */
+  /* Image de la modal de la sonorité du V10 */
 }
-@media (max-width: 1399.98px) {
+@media (min-width: 992px) {
   .accueil .background-image .accueil-contenu .section_passion .presentation .boutons-son-intro .modal .modal-content, .accueil .background-image .accueil-contenu .section_passion .pilotesFav .boutons-son-intro .modal .modal-content, .accueil .background-image .accueil-contenu .section_passion .ecuriesFav .boutons-son-intro .modal .modal-content {
-    width: 70%;
+    width: 80%;
+    height: auto;
+    margin: auto;
   }
 }
-.accueil .background-image .accueil-contenu .section_passion .presentation .boutons-son-intro .modal .img-modal, .accueil .background-image .accueil-contenu .section_passion .pilotesFav .boutons-son-intro .modal .img-modal, .accueil .background-image .accueil-contenu .section_passion .ecuriesFav .boutons-son-intro .modal .img-modal {
+.accueil .background-image .accueil-contenu .section_passion .presentation .boutons-son-intro .modal .modal-content video, .accueil .background-image .accueil-contenu .section_passion .pilotesFav .boutons-son-intro .modal .modal-content video, .accueil .background-image .accueil-contenu .section_passion .ecuriesFav .boutons-son-intro .modal .modal-content video {
+  width: 100%;
+  height: 100%;
+}
+.accueil .background-image .accueil-contenu .section_passion .presentation .boutons-son-intro .modal .modal-content .img-modal, .accueil .background-image .accueil-contenu .section_passion .pilotesFav .boutons-son-intro .modal .modal-content .img-modal, .accueil .background-image .accueil-contenu .section_passion .ecuriesFav .boutons-son-intro .modal .modal-content .img-modal {
   width: 25%;
   height: auto;
   margin: auto;
-  display: flex;
+}
+.accueil .background-image .accueil-contenu .section_passion .presentation .boutons-son-intro .modal .modal-content audio, .accueil .background-image .accueil-contenu .section_passion .pilotesFav .boutons-son-intro .modal .modal-content audio, .accueil .background-image .accueil-contenu .section_passion .ecuriesFav .boutons-son-intro .modal .modal-content audio {
+  width: 100%;
+  height: 100%;
 }
 .accueil .background-image .accueil-contenu .section_passion .presentation .boutons-son-intro .intro-2022::before, .accueil .background-image .accueil-contenu .section_passion .presentation .boutons-son-intro .sonorite-v10::before, .accueil .background-image .accueil-contenu .section_passion .pilotesFav .boutons-son-intro .intro-2022::before, .accueil .background-image .accueil-contenu .section_passion .pilotesFav .boutons-son-intro .sonorite-v10::before, .accueil .background-image .accueil-contenu .section_passion .ecuriesFav .boutons-son-intro .intro-2022::before, .accueil .background-image .accueil-contenu .section_passion .ecuriesFav .boutons-son-intro .sonorite-v10::before {
   content: "";
