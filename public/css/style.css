@@ -4373,7 +4373,7 @@ body .ui-autocomplete .ui-menu-item .ui-menu-item-wrapper:hover {
 }
 .page-404 .titre-404 {
   /* Titre de la page 404 */
-  margin: 0;
+  margin-bottom: 5.2rem;
   text-align: center;
   color: #FFFFFF;
 }
