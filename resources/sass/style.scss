@@ -225,7 +225,7 @@
 
                             @media (max-width: 575.98px){
                                 margin: 1rem 0;
-                                padding: 0.5em 3em;
+                                padding: 0.5em 0;
                             }
 
                             &:hover{
@@ -256,59 +256,75 @@
                                 }
                             }
 
-                            /* Fermeture du container média de chaque bouton */
+                            /* Responsive pour le mobile */
 
-                            .modal-button{
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                font-size: 2em;
-                                background-color: #E00501;
-                                width: 50px;
-                                height: 50px;
-                                border-radius: 10px;
-                                cursor: url("/images/bouton_icones/cursorBtn.png"), pointer;
-                                @media (min-width: 1024px){
-                                    transition: 0.8s ease;
-                                }
-                                &:hover{
-                                    @media (min-width: 1024px){
-                                        transition: 0.8s ease;
-                                        background-color: #FFFFFF;
-                                        color: #000000;
-                                    }
-                                }
+                            @media (max-width: 575.98px){
+                                padding: 0;
                             }
 
                             /* Contenu du container média de chaque bouton */
 
-                            .modal-content{
-                                background: transparent;
-                                @media (min-width: 992px){
-                                    width: 80%;
-                                    height: auto;
-                                    margin: auto;
+                            .modal-dialog{
+
+                                /* Fermeture du container média de chaque bouton */
+
+                                .modal-button{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    font-size: 2em;
+                                    background-color: #E00501;
+                                    width: 50px;
+                                    height: 50px;
+                                    border-radius: 10px;
+                                    cursor: url("/images/bouton_icones/cursorBtn.png"), pointer;
+                                    @media (min-width: 1024px){
+                                        transition: 0.8s ease;
+                                    }
+                                    &:hover{
+                                        @media (min-width: 1024px){
+                                            transition: 0.8s ease;
+                                            background-color: #FFFFFF;
+                                            color: #000000;
+                                        }
+                                    }
                                 }
 
-                                /* Intro officielle de la Formule 1 */
+                                /* Contenu de la modal */
 
-                                video{
-                                    width: 100%;
-                                    height: 100%;
+                                .modal-content{
+                                    background: transparent;
+    
+                                    /* Intro officielle de la Formule 1 */
+    
+                                    video{
+                                        width: 100%;
+                                        height: 100%;
+                                        margin: auto;
+                                    }
+    
+                                    /* Image de la modal de la sonorité du V10 */
+    
+                                    .img-modal{
+                                        width: 25%;
+                                        height: auto;
+                                        margin: auto;
+                                    }
+
+                                    /* Sonorité d'un V10 */
+    
+                                    audio{
+                                        width: 100%;
+                                        height: 100%;
+                                        margin: auto;
+                                    }
                                 }
+                            }
 
-                                /* Image de la modal de la sonorité du V10 */
-
-                                .img-modal{
-                                    width: 25%;
-                                    height: auto;
-                                    margin: auto;
-                                }
-
-                                audio{
-                                    width: 100%;
-                                    height: 100%;
-                                }
+                            /* Modif valeur lageur */
+                            
+                            .modal-dialog{
+                                width: 100%;
                             }
                         }
 

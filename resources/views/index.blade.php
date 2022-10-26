@@ -73,11 +73,13 @@
                                 Intro Officielle
                             </button>
                             <div id="modal-intro" class="modal">
-                                <span class="fas modal-button"></span>
-                                <div class="modal-content">
-                                    <video id="vid">
-                                        <source src="{{ url('images/medias/intro_F1_2022.mp4') }}" type="video/mp4">
-                                    </video>
+                                <div class="modal-dialog modal-fullscreen">
+                                    <span class="fas modal-button"></span>
+                                    <div class="modal-content">
+                                        <video id="vid">
+                                            <source src="{{ url('images/medias/intro_F1_2022.mp4') }}" type="video/mp4">
+                                        </video>
+                                    </div>
                                 </div>
                             </div>
 
@@ -87,12 +89,14 @@
                                 Sonorité du V10
                             </button>
                             <div id="modal-v10" class="modal">
-                                <span class="fas modal-button"></span>
-                                <div class="modal-content">
-                                    <img src="{{ url('images/bouton_icones/headphones-icon.png') }}" alt="Îcone de la modal" class="img-modal">
-                                    <audio id="aud">
-                                        <source src="{{ url('images/medias/le_moteur_v10.mp3') }}">
-                                    </audio>
+                                <div class="modal-dialog modal-fullscreen">
+                                    <span class="fas modal-button"></span>
+                                    <div class="modal-content">
+                                        <img src="{{ url('images/bouton_icones/headphones-icon.png') }}" alt="Îcone de la modal" class="img-modal">
+                                        <audio id="aud">
+                                            <source src="{{ url('images/medias/le_moteur_v10.mp3') }}">
+                                        </audio>
+                                    </div>
                                 </div>
                             </div>
                         </div>
