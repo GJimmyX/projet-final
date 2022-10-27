@@ -3,46 +3,59 @@
 @section('title', 'Confirmer votre Mot de Passe')
 
 @section('contenu')
-    <div class="container confirmContainer">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">{{ __('Confirmation Mot de Passe') }}</div>
+    <div class="backgroundLogin">
+        <div class="container confirmContainer">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
 
-                    <div class="card-body">
-                        {{ __('Veuillez confirmer votre Mot de Passe avant de continuer') }}
+                        <!-- Formulaire permettant de confirmer son mot de passe -->
 
-                        <form method="POST" action="{{ route('password.confirm') }}">
-                            @csrf
+                        <div class="card-header">{{ __('Confirmation Mot de Passe') }}</div>
 
-                            <div class="row mb-3">
-                                <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Mot de Passe') }}</label>
+                        <div class="card-body">
+                            {{ __('Veuillez confirmer votre Mot de Passe avant de continuer') }}
 
-                                <div class="col-md-6">
-                                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                            <form method="POST" action="{{ route('password.confirm') }}">
+                                @csrf
 
-                                    @error('password')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
+                                <!-- Champ de renseignement du mot de passe pour la confirmation -->
+
+                                <div class="row mb-3">
+                                    <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Mot de Passe :') }}</label>
+
+                                    <div class="col-md-6">
+                                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+
+                                        <!-- S'il y a une erreur, on affiche un message -->
+
+                                        @error('password')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ __('Le mot de passe saisi est incorrect !') }}</strong>
+                                            </span>
+                                        @enderror
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="row mb-0">
-                                <div class="col-md-8 offset-md-4">
-                                    <button type="submit" class="btn btn-primary">
-                                        {{ __('Confirmer le Mot de Passe') }}
-                                    </button>
+                                <!-- Bouton permettant la confirmation du mot de passe -->
 
-                                    @if (Route::has('password.request'))
-                                        <a class="btn btn-link" href="{{ route('password.request') }}">
-                                            {{ __('Mot de passe oublié ?') }}
-                                        </a>
-                                    @endif
+                                <div class="row mb-0">
+                                    <div class="col-md-12 text-center">
+                                        <button type="submit" class="btn btn-primary">
+                                            {{ __('Confirmer le Mot de Passe') }}
+                                        </button>
+
+                                        <!-- Si mot de passe oublié, lien permmettant d'être rediriger vers la page de demande de réinitialisation de mot de passe -->
+
+                                        @if (Route::has('password.request'))
+                                            <a class="btn btn-link" href="{{ route('password.request') }}">
+                                                {{ __('Mot de passe oublié ?') }}
+                                            </a>
+                                        @endif
+                                    </div>
                                 </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

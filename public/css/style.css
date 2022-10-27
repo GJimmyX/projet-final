@@ -346,7 +346,22 @@ body header .header-container .toggled-on {
     align-items: start;
   }
 }
+body .ui-autocomplete {
+  /* Largeur de la liste de suggestions hors mobile */
+  width: 300px !important;
+  /* Responsive pour le mobile */
+}
+@media (max-width: 575.98px) {
+  body .ui-autocomplete {
+    width: 100% !important;
+    left: 0px !important;
+  }
+}
 body .ui-autocomplete .ui-menu-item .ui-menu-item-wrapper:hover {
+  background-color: #E00501 !important;
+  border-color: #2A2622;
+}
+body .ui-autocomplete .ui-menu-item .ui-state-active {
   background-color: #E00501 !important;
   border-color: #2A2622;
 }
@@ -491,6 +506,13 @@ body .ui-autocomplete .ui-menu-item .ui-menu-item-wrapper:hover {
 }
 .backgroundLogin .emailContainer .row .col-md-8 .card .card-body form .mb-3 {
   justify-content: center;
+  gap: 5px;
+  /* Responsive pour le mobile  */
+}
+@media (max-width: 767.98px) {
+  .backgroundLogin .emailContainer .row .col-md-8 .card .card-body form .mb-3 {
+    text-align: center;
+  }
 }
 .backgroundLogin .emailContainer .row .col-md-8 .card .card-body form .mb-3 label {
   color: #241F48;
@@ -520,6 +542,211 @@ body .ui-autocomplete .ui-menu-item .ui-menu-item-wrapper:hover {
   color: white;
 }
 .backgroundLogin .emailContainer .row .col-md-8 .card .card-body form .mb-0 .col-md-6 button:focus {
+  box-shadow: 0 0 0 0.25rem rgb(35, 144, 189);
+}
+
+/* Import du CSS pour 'reset.blade.php' */
+/* CSS du formulaire de réinitialisation de mot de passe du site 'Passionné de Formule 1' */
+.backgroundLogin {
+  /* Arrière plan de la page de réinitialisation de mot de passe */
+  background-image: url("/images/Fond_page_de_connexion_admin.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.backgroundLogin .resetContainer {
+  /* Section du formulaire */
+  padding: 12.075% 0;
+  font-family: "Lato", sans-serif;
+}
+.backgroundLogin .resetContainer .row {
+  --bs-gutter-x: 0 !important;
+  --bs-gutter-y: 0 !important;
+}
+.backgroundLogin .resetContainer .row .col-md-8 .card {
+  background-color: rgba(152, 152, 152, 0.7);
+  border-color: #2A2622;
+}
+.backgroundLogin .resetContainer .row .col-md-8 .card .card-header {
+  /* Entête du formulaire */
+  background-color: #241F48;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1;
+  color: white;
+  cursor: context-menu;
+}
+.backgroundLogin .resetContainer .row .col-md-8 .card .card-body form {
+  /* Corps du formulaire */
+}
+.backgroundLogin .resetContainer .row .col-md-8 .card .card-body form .mb-3 {
+  justify-content: center;
+  gap: 5px;
+  /* Responsive pour le mobile  */
+}
+@media (max-width: 767.98px) {
+  .backgroundLogin .resetContainer .row .col-md-8 .card .card-body form .mb-3 {
+    text-align: center;
+  }
+}
+.backgroundLogin .resetContainer .row .col-md-8 .card .card-body form .mb-3 label {
+  color: #241F48;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1;
+}
+.backgroundLogin .resetContainer .row .col-md-8 .card .card-body form .mb-3 .col-md-6 #email, .backgroundLogin .resetContainer .row .col-md-8 .card .card-body form .mb-3 .col-md-6 #password, .backgroundLogin .resetContainer .row .col-md-8 .card .card-body form .mb-3 .col-md-6 #password-confirm {
+  /* Champs Email, Mot de Passe et Confirmation Mot de Passe */
+  background-color: #2A2622;
+  border-color: #E00501;
+  color: white;
+}
+.backgroundLogin .resetContainer .row .col-md-8 .card .card-body form .mb-3 .col-md-6 #email:focus, .backgroundLogin .resetContainer .row .col-md-8 .card .card-body form .mb-3 .col-md-6 #password:focus, .backgroundLogin .resetContainer .row .col-md-8 .card .card-body form .mb-3 .col-md-6 #password-confirm:focus {
+  box-shadow: 0 0 0 0.25rem rgb(223, 110, 106);
+}
+.backgroundLogin .resetContainer .row .col-md-8 .card .card-body form .mb-0 {
+  justify-content: center;
+}
+.backgroundLogin .resetContainer .row .col-md-8 .card .card-body form .mb-0 .col-md-6 button {
+  /* Bouton de validation du formulaire */
+  background-color: #241F48;
+  border-color: #241F48;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1;
+  color: white;
+}
+.backgroundLogin .resetContainer .row .col-md-8 .card .card-body form .mb-0 .col-md-6 button:focus {
+  box-shadow: 0 0 0 0.25rem rgb(35, 144, 189);
+}
+
+/* Import du CSS pour 'confirm.blade.php' */
+/* CSS du formulaire de confirmation de mot de passe du site 'Passionné de Formule 1' */
+.backgroundLogin {
+  /* Arrière plan de la page de confirmation de mot de passe */
+  background-image: url("/images/Fond_page_de_connexion_admin.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.backgroundLogin .confirmContainer {
+  /* Section du formulaire */
+  padding: 14.275% 0;
+  font-family: "Lato", sans-serif;
+}
+.backgroundLogin .confirmContainer .row {
+  --bs-gutter-x: 0 !important;
+  --bs-gutter-y: 0 !important;
+}
+.backgroundLogin .confirmContainer .row .col-md-8 .card {
+  background-color: rgba(152, 152, 152, 0.7);
+  border-color: #2A2622;
+}
+.backgroundLogin .confirmContainer .row .col-md-8 .card .card-header {
+  /* Entête du formulaire */
+  background-color: #241F48;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1;
+  color: white;
+  cursor: context-menu;
+}
+.backgroundLogin .confirmContainer .row .col-md-8 .card .card-body form {
+  /* Corps du formulaire */
+}
+.backgroundLogin .confirmContainer .row .col-md-8 .card .card-body form .mb-3 {
+  justify-content: center;
+  gap: 5px;
+  /* Responsive pour le mobile  */
+}
+@media (max-width: 767.98px) {
+  .backgroundLogin .confirmContainer .row .col-md-8 .card .card-body form .mb-3 {
+    text-align: center;
+  }
+}
+.backgroundLogin .confirmContainer .row .col-md-8 .card .card-body form .mb-3 label {
+  color: #241F48;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1;
+}
+.backgroundLogin .confirmContainer .row .col-md-8 .card .card-body form .mb-3 .col-md-6 #password {
+  /* Champ Mot de passe */
+  background-color: #2A2622;
+  border-color: #E00501;
+  color: white;
+}
+.backgroundLogin .confirmContainer .row .col-md-8 .card .card-body form .mb-3 .col-md-6 #password:focus {
+  box-shadow: 0 0 0 0.25rem rgb(223, 110, 106);
+}
+.backgroundLogin .confirmContainer .row .col-md-8 .card .card-body form .mb-0 {
+  justify-content: center;
+}
+.backgroundLogin .confirmContainer .row .col-md-8 .card .card-body form .mb-0 .col-md-12 button {
+  /* Bouton de validation du formulaire */
+  background-color: #241F48;
+  border-color: #241F48;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1;
+  color: white;
+}
+.backgroundLogin .confirmContainer .row .col-md-8 .card .card-body form .mb-0 .col-md-12 button:focus {
+  box-shadow: 0 0 0 0.25rem rgb(35, 144, 189);
+}
+.backgroundLogin .confirmContainer .row .col-md-8 .card .card-body form .mb-0 .col-md-12 .btn-link {
+  /* Lien Mot de Passe Oublié */
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1;
+  color: #241F48;
+}
+.backgroundLogin .confirmContainer .row .col-md-8 .card .card-body form .mb-0 .col-md-12 .btn-link:focus {
+  box-shadow: none;
+}
+
+/* Import du CSS pour 'verify.blade.php' */
+/* CSS du formulaire de confirmation d'email du site 'Passionné de Formule 1' */
+.backgroundLogin {
+  /* Arrière plan de la page de confirmation de mail */
+  background-image: url("/images/Fond_page_de_connexion_admin.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.backgroundLogin .verifyContainer {
+  /* Section du formulaire */
+  padding: 14.275% 0;
+  font-family: "Lato", sans-serif;
+}
+.backgroundLogin .verifyContainer .row {
+  --bs-gutter-x: 0 !important;
+  --bs-gutter-y: 0 !important;
+}
+.backgroundLogin .verifyContainer .row .col-md-8 .card {
+  background-color: rgba(152, 152, 152, 0.7);
+  border-color: #2A2622;
+}
+.backgroundLogin .verifyContainer .row .col-md-8 .card .card-header {
+  /* Entête du formulaire */
+  background-color: #241F48;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1;
+  color: white;
+  cursor: context-menu;
+}
+.backgroundLogin .verifyContainer .row .col-md-8 .card .card-body form button {
+  /* Bouton de renvoi du lien de confirmation de l'email */
+  background-color: #241F48;
+  border-color: #241F48;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1;
+  color: white;
+}
+.backgroundLogin .verifyContainer .row .col-md-8 .card .card-body form button:focus {
   box-shadow: 0 0 0 0.25rem rgb(35, 144, 189);
 }
 

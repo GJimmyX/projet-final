@@ -1,0 +1,57 @@
+/* CSS du formulaire de confirmation d'email du site 'Passionné de Formule 1' */
+
+.backgroundLogin{
+
+    /* Arrière plan de la page de confirmation de mail */
+    
+    background-image: url('/images/Fond_page_de_connexion_admin.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .verifyContainer{
+
+        /* Section du formulaire */
+    
+        padding: 14.275% 0;
+        font-family: 'Lato', sans-serif;
+        .row{
+            --bs-gutter-x: 0 !important;
+            --bs-gutter-y: 0 !important;
+            .col-md-8{
+                .card{
+                    background-color: rgba(152, 152, 152, 0.7);
+                    border-color: #2A2622;
+                    .card-header{
+                    
+                        /* Entête du formulaire */
+    
+                        background-color: #241F48;
+                        font-weight: 400;
+                        font-size: 1.5em;
+                        line-height: 1;
+                        color: white;
+                        cursor: context-menu;
+                    }
+                    .card-body{
+                        form{
+                            button{
+        
+                                /* Bouton de renvoi du lien de confirmation de l'email */
+
+                                background-color: #241F48;
+                                border-color: #241F48;
+                                font-weight: 400;
+                                font-size: 1.5em;
+                                line-height: 1;
+                                color: white;
+                                &:focus{
+                                    box-shadow: 0 0 0 0.25rem rgb(35, 144, 189);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

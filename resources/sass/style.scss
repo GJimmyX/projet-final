@@ -10,6 +10,18 @@
 
 @import 'parts/auth/password.email';
 
+/* Import du CSS pour 'reset.blade.php' */
+
+@import 'parts/auth/password.reset';
+
+/* Import du CSS pour 'confirm.blade.php' */
+
+@import 'parts/auth/password.confirm';
+
+/* Import du CSS pour 'verify.blade.php' */
+
+@import 'parts/auth/email.verify';
+
 /* Import du CSS pour le crud 'ArticleController' */
 
 @import 'parts/articleController/crud-article.scss';

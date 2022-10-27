@@ -377,12 +377,27 @@ body{
     /* Petite touche de personnalisation pour l'auto-completion de la barre de recherche*/
 
     .ui-autocomplete{
+
+        /* Largeur de la liste de suggestions hors mobile */
+
+        width: 300px !important;
+        
+        /* Responsive pour le mobile */
+
+        @media (max-width: 575.98px){
+            width: 100% !important;
+            left: 0px !important;
+        }
         .ui-menu-item{
             .ui-menu-item-wrapper{
                 &:hover{
                     background-color: #E00501 !important;
                     border-color: #2A2622;
                 }
+            }
+            .ui-state-active{
+                background-color: #E00501 !important;
+                border-color: #2A2622;
             }
         }
     }

@@ -14,9 +14,12 @@
                         <div class="card-header">{{ __('Réinitialisation du Mot de Passe') }}</div>
 
                         <div class="card-body">
+
+                            <!-- S'il y a pas d'erreur, on affiche un message -->
+
                             @if (session('status'))
                                 <div class="alert alert-success" role="alert">
-                                    {{ session('status') }}
+                                    {{ __('Un lien de réinitialisation de mot de passe vient d\'être envoyé') }}
                                 </div>
                             @endif
 
@@ -35,7 +38,7 @@
 
                                         @error('email')
                                             <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $message }}</strong>
+                                                <strong>{{ __('Veuillez renseigner l\'email associé à votre compte') }}</strong>
                                             </span>
                                         @enderror
                                     </div>
@@ -45,7 +48,7 @@
 
                                 <div class="row mb-0">
                                     <div class="col-md-6">
-                                        <button type="submit" class="btn btn-primary">
+                                        <button type="submit" class="btn col-12">
                                             {{ __('Envoi du lien de réinitialisation du Mot de Passe') }}
                                         </button>
                                     </div>
