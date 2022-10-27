@@ -4664,8 +4664,9 @@ footer .footer-container .col-rs .rsLink .rsItem {
 }
 @media (max-width: 575.98px) {
   .accueil .background-image .accueil-contenu .section_passion .presentation .boutons-son-intro .intro-2022, .accueil .background-image .accueil-contenu .section_passion .presentation .boutons-son-intro .sonorite-v10, .accueil .background-image .accueil-contenu .section_passion .pilotesFav .boutons-son-intro .intro-2022, .accueil .background-image .accueil-contenu .section_passion .pilotesFav .boutons-son-intro .sonorite-v10, .accueil .background-image .accueil-contenu .section_passion .ecuriesFav .boutons-son-intro .intro-2022, .accueil .background-image .accueil-contenu .section_passion .ecuriesFav .boutons-son-intro .sonorite-v10 {
+    width: 160px;
     margin: 1rem 0;
-    padding: 0.5em 0;
+    padding: 0.5em 0.5em;
   }
 }
 .accueil .background-image .accueil-contenu .section_passion .presentation .boutons-son-intro .intro-2022:hover, .accueil .background-image .accueil-contenu .section_passion .presentation .boutons-son-intro .sonorite-v10:hover, .accueil .background-image .accueil-contenu .section_passion .pilotesFav .boutons-son-intro .intro-2022:hover, .accueil .background-image .accueil-contenu .section_passion .pilotesFav .boutons-son-intro .sonorite-v10:hover, .accueil .background-image .accueil-contenu .section_passion .ecuriesFav .boutons-son-intro .intro-2022:hover, .accueil .background-image .accueil-contenu .section_passion .ecuriesFav .boutons-son-intro .sonorite-v10:hover {
