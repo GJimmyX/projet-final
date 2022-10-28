@@ -146,6 +146,16 @@
                         @media (max-width: 1023.98px){
                             flex-direction: column;
                         }
+                        label{
+
+                            /* Responsive mobile et tablette */
+
+                            @media (max-width: 1023.98px){
+                                width: 100%;
+                                text-align: center;
+                            }
+                            
+                        }
                         strong{
                             width: 60%;
                             font-size: 2em;

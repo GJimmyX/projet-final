@@ -61,7 +61,7 @@ class CreateEcuriesSeeder extends Seeder
             ],
         ];
 
-        // Pour chaque ecurie rensignée, implantation dans une ligne de la table 'Ecuries' dans la base de données
+        // Pour chaque écurie renseignée, implantation dans une ligne de la table 'Ecuries' dans la base de données
 
         foreach ($ecuries as $key => $ecurie) {
             Ecurie::create($ecurie);

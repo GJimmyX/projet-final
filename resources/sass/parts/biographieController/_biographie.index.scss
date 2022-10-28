@@ -72,6 +72,12 @@
                 transform-origin: center;
                 transform: translate(-50%, 0) scaleX(0);
                 transition: transform 0.3s ease-in-out;
+
+                /* Responsive mobile et tablette */
+
+                @media (max-width: 991.98px){
+                    display: none;
+                }
             }
             .btn-index:hover::before{
                 transform: translate(-50%, 0) scaleX(1);
@@ -268,6 +274,12 @@
                                 bottom: -50%;
                                 width: 1.5em;
                                 transform: translate3d(-525%, 0, 0) rotate(35deg);
+
+                                /* Responsive mobile et tablette */
+
+                                @media (max-width: 991.98px){
+                                    display: none;
+                                }
                             }
                             .vision:hover::after, .edition:hover::after{
                                 transition: transform 0.45s ease-in-out;
@@ -295,6 +307,12 @@
                                     bottom: -50%;
                                     width: 1.5em;
                                     transform: translate3d(-525%, 0, 0) rotate(35deg);
+
+                                    /* Responsive mobile et tablette */
+
+                                    @media (max-width: 991.98px){
+                                        display: none;
+                                    }
                                 }
                                 .suppression:hover::after{
                                     transition: transform 0.45s ease-in-out;

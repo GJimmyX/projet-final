@@ -51,6 +51,12 @@
                     transform: scaleX(1);
                     transition: transform 0.5s ease;
                     background-color: #241F48;
+
+                    /* Responsive pour mobile et tablette */
+
+                    @media (max-width: 991.98px){
+                        background-color: #E00501;
+                    }
                 }
             }
 
@@ -66,6 +72,12 @@
                 transform-origin: center right;
                 transform: scaleX(0);
                 transition: transform 0.5s ease;
+
+                /* Responsive pour mobile et tablette */
+
+                @media (max-width: 991.98px){
+                    display: none;
+                }
             }
             .pagination-lien::before{
                 top: 0;

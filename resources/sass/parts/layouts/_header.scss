@@ -180,9 +180,9 @@ body{
                                 transform: scaleX(0);
                                 transition: transform 0.5s ease;
 
-                                /* Responsive pour le mobile */
+                                /* Responsive pour mobile et tablette */
 
-                                @media (max-width: 575.98px){
+                                @media (max-width: 991.98px){
                                     display: none;
                                 }
                             }
@@ -240,9 +240,7 @@ body{
                                         text-align: center;
                                     }
                                     &:hover{
-                                        @media (min-width: 1360px){
-                                            background-color: #E00501;
-                                        }
+                                        background-color: #E00501;
                                     }
                                 }
                             }

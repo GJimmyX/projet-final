@@ -182,9 +182,9 @@ body header .header-container .siteNav .nav-menu .navbar-nav .nav-item .nav-link
   background-color: #E00501;
   transform: scaleX(0);
   transition: transform 0.5s ease;
-  /* Responsive pour le mobile */
+  /* Responsive pour mobile et tablette */
 }
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   body header .header-container .siteNav .nav-menu .navbar-nav .nav-item .nav-link::before, body header .header-container .siteNav .nav-menu .navbar-nav .nav-item .nav-link::after {
     display: none;
   }
@@ -229,10 +229,8 @@ body header .header-container .siteNav .nav-menu .navbar-nav .nav-item .dropdown
     text-align: center;
   }
 }
-@media (min-width: 1360px) {
-  body header .header-container .siteNav .nav-menu .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
-    background-color: #E00501;
-  }
+body header .header-container .siteNav .nav-menu .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+  background-color: #E00501;
 }
 body header .header-container .siteNav .nav-menu .toggled-on {
   /* Mobile */
@@ -820,6 +818,12 @@ body .ui-autocomplete .ui-menu-item .ui-state-active {
   transform-origin: center;
   transform: translate(-50%, 0) scaleX(0);
   transition: transform 0.3s ease-in-out;
+  /* Responsive mobile et tablette */
+}
+@media (max-width: 991.98px) {
+  .accueil-admin-articles .index-titre-btn .titre-btn-index .btn-index::before {
+    display: none;
+  }
 }
 .accueil-admin-articles .index-titre-btn .titre-btn-index .btn-index:hover::before {
   transform: translate(-50%, 0) scaleX(1);
@@ -983,6 +987,12 @@ body .ui-autocomplete .ui-menu-item .ui-state-active {
   bottom: -50%;
   width: 1.5em;
   transform: translate3d(-525%, 0, 0) rotate(35deg);
+  /* Responsive mobile et tablette */
+}
+@media (max-width: 991.98px) {
+  .accueil-admin-articles .background-image .index-container .index-table .table-body .article-options .btn-article .vision::after, .accueil-admin-articles .background-image .index-container .index-table .table-body .article-options .btn-article .edition::after {
+    display: none;
+  }
 }
 .accueil-admin-articles .background-image .index-container .index-table .table-body .article-options .btn-article .vision:hover::after, .accueil-admin-articles .background-image .index-container .index-table .table-body .article-options .btn-article .edition:hover::after {
   transition: transform 0.45s ease-in-out;
@@ -1007,6 +1017,12 @@ body .ui-autocomplete .ui-menu-item .ui-state-active {
   bottom: -50%;
   width: 1.5em;
   transform: translate3d(-525%, 0, 0) rotate(35deg);
+  /* Responsive mobile et tablette */
+}
+@media (max-width: 991.98px) {
+  .accueil-admin-articles .background-image .index-container .index-table .table-body .article-options .btn-article form .suppression::after {
+    display: none;
+  }
 }
 .accueil-admin-articles .background-image .index-container .index-table .table-body .article-options .btn-article form .suppression:hover::after {
   transition: transform 0.45s ease-in-out;
@@ -1400,7 +1416,7 @@ body .ui-autocomplete .ui-menu-item .ui-state-active {
 }
 .create-edit-admin-articles .background-image .create-edit-container .create-form .row .form-article-champ-titre .edit-champ-image .img-actuelle, .create-edit-admin-articles .background-image .create-edit-container .create-form .row .form-article-champ-date .edit-champ-image .img-actuelle, .create-edit-admin-articles .background-image .create-edit-container .create-form .row .form-article-champ-contenu .edit-champ-image .img-actuelle, .create-edit-admin-articles .background-image .create-edit-container .create-form .row .form-article-champ-image .edit-champ-image .img-actuelle, .create-edit-admin-articles .background-image .create-edit-container .edit-form .row .form-article-champ-titre .edit-champ-image .img-actuelle, .create-edit-admin-articles .background-image .create-edit-container .edit-form .row .form-article-champ-date .edit-champ-image .img-actuelle, .create-edit-admin-articles .background-image .create-edit-container .edit-form .row .form-article-champ-contenu .edit-champ-image .img-actuelle, .create-edit-admin-articles .background-image .create-edit-container .edit-form .row .form-article-champ-image .edit-champ-image .img-actuelle {
   width: 100%;
-  height: 100%;
+  max-height: 100%;
 }
 .create-edit-admin-articles .background-image .create-edit-container .create-form .row .form-article-champ-titre .edit-champ-image .input-nvl-img, .create-edit-admin-articles .background-image .create-edit-container .create-form .row .form-article-champ-date .edit-champ-image .input-nvl-img, .create-edit-admin-articles .background-image .create-edit-container .create-form .row .form-article-champ-contenu .edit-champ-image .input-nvl-img, .create-edit-admin-articles .background-image .create-edit-container .create-form .row .form-article-champ-image .edit-champ-image .input-nvl-img, .create-edit-admin-articles .background-image .create-edit-container .edit-form .row .form-article-champ-titre .edit-champ-image .input-nvl-img, .create-edit-admin-articles .background-image .create-edit-container .edit-form .row .form-article-champ-date .edit-champ-image .input-nvl-img, .create-edit-admin-articles .background-image .create-edit-container .edit-form .row .form-article-champ-contenu .edit-champ-image .input-nvl-img, .create-edit-admin-articles .background-image .create-edit-container .edit-form .row .form-article-champ-image .edit-champ-image .input-nvl-img {
   width: 100%;
@@ -1522,6 +1538,12 @@ body .ui-autocomplete .ui-menu-item .ui-state-active {
   transform-origin: center;
   transform: translate(-50%, 0) scaleX(0);
   transition: transform 0.3s ease-in-out;
+  /* Responsive mobile et tablette */
+}
+@media (max-width: 991.98px) {
+  .accueil-admin-pilotes .index-titre-btn .titre-btn-index .btn-index::before {
+    display: none;
+  }
 }
 .accueil-admin-pilotes .index-titre-btn .titre-btn-index .btn-index:hover::before {
   transform: translate(-50%, 0) scaleX(1);
@@ -1737,6 +1759,12 @@ body .ui-autocomplete .ui-menu-item .ui-state-active {
   bottom: -50%;
   width: 1.5em;
   transform: translate3d(-525%, 0, 0) rotate(35deg);
+  /* Responsive mobile et tablette */
+}
+@media (max-width: 991.98px) {
+  .accueil-admin-pilotes .background-image .index-container .index-table .table-body .pilote-options .btn-pilote .vision::after, .accueil-admin-pilotes .background-image .index-container .index-table .table-body .pilote-options .btn-pilote .edition::after {
+    display: none;
+  }
 }
 .accueil-admin-pilotes .background-image .index-container .index-table .table-body .pilote-options .btn-pilote .vision:hover::after, .accueil-admin-pilotes .background-image .index-container .index-table .table-body .pilote-options .btn-pilote .edition:hover::after {
   transition: transform 0.45s ease-in-out;
@@ -1761,6 +1789,12 @@ body .ui-autocomplete .ui-menu-item .ui-state-active {
   bottom: -50%;
   width: 1.5em;
   transform: translate3d(-525%, 0, 0) rotate(35deg);
+  /* Responsive mobile et tablette */
+}
+@media (max-width: 991.98px) {
+  .accueil-admin-pilotes .background-image .index-container .index-table .table-body .pilote-options .btn-pilote form .suppression::after {
+    display: none;
+  }
 }
 .accueil-admin-pilotes .background-image .index-container .index-table .table-body .pilote-options .btn-pilote form .suppression:hover::after {
   transition: transform 0.45s ease-in-out;
@@ -1906,6 +1940,15 @@ body .ui-autocomplete .ui-menu-item .ui-state-active {
 @media (max-width: 1023.98px) {
   .create-edit-admin-pilotes .background-image .create-edit-container .create-form .row .form-pilote-champ-ecurie_id, .create-edit-admin-pilotes .background-image .create-edit-container .create-form .row .form-pilote-champ-role_pilote, .create-edit-admin-pilotes .background-image .create-edit-container .create-form .row .form-pilote-champ-nom-pilote, .create-edit-admin-pilotes .background-image .create-edit-container .create-form .row .form-pilote-champ-nationalite, .create-edit-admin-pilotes .background-image .create-edit-container .create-form .row .form-pilote-champ-drapeau, .create-edit-admin-pilotes .background-image .create-edit-container .create-form .row .form-pilote-champ-points, .create-edit-admin-pilotes .background-image .create-edit-container .create-form .row .form-pilote-champ-img_ecurie, .create-edit-admin-pilotes .background-image .create-edit-container .edit-form .row .form-pilote-champ-ecurie_id, .create-edit-admin-pilotes .background-image .create-edit-container .edit-form .row .form-pilote-champ-role_pilote, .create-edit-admin-pilotes .background-image .create-edit-container .edit-form .row .form-pilote-champ-nom-pilote, .create-edit-admin-pilotes .background-image .create-edit-container .edit-form .row .form-pilote-champ-nationalite, .create-edit-admin-pilotes .background-image .create-edit-container .edit-form .row .form-pilote-champ-drapeau, .create-edit-admin-pilotes .background-image .create-edit-container .edit-form .row .form-pilote-champ-points, .create-edit-admin-pilotes .background-image .create-edit-container .edit-form .row .form-pilote-champ-img_ecurie {
     flex-direction: column;
+  }
+}
+.create-edit-admin-pilotes .background-image .create-edit-container .create-form .row .form-pilote-champ-ecurie_id label, .create-edit-admin-pilotes .background-image .create-edit-container .create-form .row .form-pilote-champ-role_pilote label, .create-edit-admin-pilotes .background-image .create-edit-container .create-form .row .form-pilote-champ-nom-pilote label, .create-edit-admin-pilotes .background-image .create-edit-container .create-form .row .form-pilote-champ-nationalite label, .create-edit-admin-pilotes .background-image .create-edit-container .create-form .row .form-pilote-champ-drapeau label, .create-edit-admin-pilotes .background-image .create-edit-container .create-form .row .form-pilote-champ-points label, .create-edit-admin-pilotes .background-image .create-edit-container .create-form .row .form-pilote-champ-img_ecurie label, .create-edit-admin-pilotes .background-image .create-edit-container .edit-form .row .form-pilote-champ-ecurie_id label, .create-edit-admin-pilotes .background-image .create-edit-container .edit-form .row .form-pilote-champ-role_pilote label, .create-edit-admin-pilotes .background-image .create-edit-container .edit-form .row .form-pilote-champ-nom-pilote label, .create-edit-admin-pilotes .background-image .create-edit-container .edit-form .row .form-pilote-champ-nationalite label, .create-edit-admin-pilotes .background-image .create-edit-container .edit-form .row .form-pilote-champ-drapeau label, .create-edit-admin-pilotes .background-image .create-edit-container .edit-form .row .form-pilote-champ-points label, .create-edit-admin-pilotes .background-image .create-edit-container .edit-form .row .form-pilote-champ-img_ecurie label {
+  /* Responsive mobile et tablette */
+}
+@media (max-width: 1023.98px) {
+  .create-edit-admin-pilotes .background-image .create-edit-container .create-form .row .form-pilote-champ-ecurie_id label, .create-edit-admin-pilotes .background-image .create-edit-container .create-form .row .form-pilote-champ-role_pilote label, .create-edit-admin-pilotes .background-image .create-edit-container .create-form .row .form-pilote-champ-nom-pilote label, .create-edit-admin-pilotes .background-image .create-edit-container .create-form .row .form-pilote-champ-nationalite label, .create-edit-admin-pilotes .background-image .create-edit-container .create-form .row .form-pilote-champ-drapeau label, .create-edit-admin-pilotes .background-image .create-edit-container .create-form .row .form-pilote-champ-points label, .create-edit-admin-pilotes .background-image .create-edit-container .create-form .row .form-pilote-champ-img_ecurie label, .create-edit-admin-pilotes .background-image .create-edit-container .edit-form .row .form-pilote-champ-ecurie_id label, .create-edit-admin-pilotes .background-image .create-edit-container .edit-form .row .form-pilote-champ-role_pilote label, .create-edit-admin-pilotes .background-image .create-edit-container .edit-form .row .form-pilote-champ-nom-pilote label, .create-edit-admin-pilotes .background-image .create-edit-container .edit-form .row .form-pilote-champ-nationalite label, .create-edit-admin-pilotes .background-image .create-edit-container .edit-form .row .form-pilote-champ-drapeau label, .create-edit-admin-pilotes .background-image .create-edit-container .edit-form .row .form-pilote-champ-points label, .create-edit-admin-pilotes .background-image .create-edit-container .edit-form .row .form-pilote-champ-img_ecurie label {
+    width: 100%;
+    text-align: center;
   }
 }
 .create-edit-admin-pilotes .background-image .create-edit-container .create-form .row .form-pilote-champ-ecurie_id strong, .create-edit-admin-pilotes .background-image .create-edit-container .create-form .row .form-pilote-champ-role_pilote strong, .create-edit-admin-pilotes .background-image .create-edit-container .create-form .row .form-pilote-champ-nom-pilote strong, .create-edit-admin-pilotes .background-image .create-edit-container .create-form .row .form-pilote-champ-nationalite strong, .create-edit-admin-pilotes .background-image .create-edit-container .create-form .row .form-pilote-champ-drapeau strong, .create-edit-admin-pilotes .background-image .create-edit-container .create-form .row .form-pilote-champ-points strong, .create-edit-admin-pilotes .background-image .create-edit-container .create-form .row .form-pilote-champ-img_ecurie strong, .create-edit-admin-pilotes .background-image .create-edit-container .edit-form .row .form-pilote-champ-ecurie_id strong, .create-edit-admin-pilotes .background-image .create-edit-container .edit-form .row .form-pilote-champ-role_pilote strong, .create-edit-admin-pilotes .background-image .create-edit-container .edit-form .row .form-pilote-champ-nom-pilote strong, .create-edit-admin-pilotes .background-image .create-edit-container .edit-form .row .form-pilote-champ-nationalite strong, .create-edit-admin-pilotes .background-image .create-edit-container .edit-form .row .form-pilote-champ-drapeau strong, .create-edit-admin-pilotes .background-image .create-edit-container .edit-form .row .form-pilote-champ-points strong, .create-edit-admin-pilotes .background-image .create-edit-container .edit-form .row .form-pilote-champ-img_ecurie strong {
@@ -2228,6 +2271,12 @@ body .ui-autocomplete .ui-menu-item .ui-state-active {
   transform-origin: center;
   transform: translate(-50%, 0) scaleX(0);
   transition: transform 0.3s ease-in-out;
+  /* Responsive mobile et tablette */
+}
+@media (max-width: 991.98px) {
+  .accueil-admin-biographies .index-titre-btn .titre-btn-index .btn-index::before {
+    display: none;
+  }
 }
 .accueil-admin-biographies .index-titre-btn .titre-btn-index .btn-index:hover::before {
   transform: translate(-50%, 0) scaleX(1);
@@ -2395,6 +2444,12 @@ body .ui-autocomplete .ui-menu-item .ui-state-active {
   bottom: -50%;
   width: 1.5em;
   transform: translate3d(-525%, 0, 0) rotate(35deg);
+  /* Responsive mobile et tablette */
+}
+@media (max-width: 991.98px) {
+  .accueil-admin-biographies .background-image .index-container .index-table .table-body .biographie-options .btn-biographie .vision::after, .accueil-admin-biographies .background-image .index-container .index-table .table-body .biographie-options .btn-biographie .edition::after {
+    display: none;
+  }
 }
 .accueil-admin-biographies .background-image .index-container .index-table .table-body .biographie-options .btn-biographie .vision:hover::after, .accueil-admin-biographies .background-image .index-container .index-table .table-body .biographie-options .btn-biographie .edition:hover::after {
   transition: transform 0.45s ease-in-out;
@@ -2419,6 +2474,12 @@ body .ui-autocomplete .ui-menu-item .ui-state-active {
   bottom: -50%;
   width: 1.5em;
   transform: translate3d(-525%, 0, 0) rotate(35deg);
+  /* Responsive mobile et tablette */
+}
+@media (max-width: 991.98px) {
+  .accueil-admin-biographies .background-image .index-container .index-table .table-body .biographie-options .btn-biographie form .suppression::after {
+    display: none;
+  }
 }
 .accueil-admin-biographies .background-image .index-container .index-table .table-body .biographie-options .btn-biographie form .suppression:hover::after {
   transition: transform 0.45s ease-in-out;
@@ -2916,6 +2977,12 @@ body .ui-autocomplete .ui-menu-item .ui-state-active {
   transform-origin: center;
   transform: translate(-50%, 0) scaleX(0);
   transition: transform 0.3s ease-in-out;
+  /* Responsive mobile et tablette */
+}
+@media (max-width: 991.98px) {
+  .accueil-admin-photos .index-titre-btn .titre-btn-index .btn-index::before {
+    display: none;
+  }
 }
 .accueil-admin-photos .index-titre-btn .titre-btn-index .btn-index:hover::before {
   transform: translate(-50%, 0) scaleX(1);
@@ -3073,6 +3140,12 @@ body .ui-autocomplete .ui-menu-item .ui-state-active {
   bottom: -50%;
   width: 1.5em;
   transform: translate3d(-525%, 0, 0) rotate(35deg);
+  /* Responsive mobile et tablette */
+}
+@media (max-width: 991.98px) {
+  .accueil-admin-photos .background-image .index-container .index-table .table-body .photo-options .btn-photo .vision::after, .accueil-admin-photos .background-image .index-container .index-table .table-body .photo-options .btn-photo .edition::after {
+    display: none;
+  }
 }
 .accueil-admin-photos .background-image .index-container .index-table .table-body .photo-options .btn-photo .vision:hover::after, .accueil-admin-photos .background-image .index-container .index-table .table-body .photo-options .btn-photo .edition:hover::after {
   transition: transform 0.45s ease-in-out;
@@ -3097,6 +3170,12 @@ body .ui-autocomplete .ui-menu-item .ui-state-active {
   bottom: -50%;
   width: 1.5em;
   transform: translate3d(-525%, 0, 0) rotate(35deg);
+  /* Responsive mobile et tablette */
+}
+@media (max-width: 991.98px) {
+  .accueil-admin-photos .background-image .index-container .index-table .table-body .photo-options .btn-photo form .suppression::after {
+    display: none;
+  }
 }
 .accueil-admin-photos .background-image .index-container .index-table .table-body .photo-options .btn-photo form .suppression:hover::after {
   transition: transform 0.45s ease-in-out;
@@ -3297,7 +3376,7 @@ body .ui-autocomplete .ui-menu-item .ui-state-active {
 }
 .create-edit-admin-photos .background-image .create-edit-container .create-form .row .form-photo-champ-image-photo .edit-champ-image-photo .img-actuelle, .create-edit-admin-photos .background-image .create-edit-container .create-form .row .form-photo-champ-titre-photo .edit-champ-image-photo .img-actuelle, .create-edit-admin-photos .background-image .create-edit-container .create-form .row .form-photo-champ-desc-photo .edit-champ-image-photo .img-actuelle, .create-edit-admin-photos .background-image .create-edit-container .edit-form .row .form-photo-champ-image-photo .edit-champ-image-photo .img-actuelle, .create-edit-admin-photos .background-image .create-edit-container .edit-form .row .form-photo-champ-titre-photo .edit-champ-image-photo .img-actuelle, .create-edit-admin-photos .background-image .create-edit-container .edit-form .row .form-photo-champ-desc-photo .edit-champ-image-photo .img-actuelle {
   width: 100%;
-  height: 100%;
+  max-height: 100%;
 }
 .create-edit-admin-photos .background-image .create-edit-container .create-form .row .form-photo-champ-image-photo .edit-champ-image-photo .input-nvl-photo, .create-edit-admin-photos .background-image .create-edit-container .create-form .row .form-photo-champ-titre-photo .edit-champ-image-photo .input-nvl-photo, .create-edit-admin-photos .background-image .create-edit-container .create-form .row .form-photo-champ-desc-photo .edit-champ-image-photo .input-nvl-photo, .create-edit-admin-photos .background-image .create-edit-container .edit-form .row .form-photo-champ-image-photo .edit-champ-image-photo .input-nvl-photo, .create-edit-admin-photos .background-image .create-edit-container .edit-form .row .form-photo-champ-titre-photo .edit-champ-image-photo .input-nvl-photo, .create-edit-admin-photos .background-image .create-edit-container .edit-form .row .form-photo-champ-desc-photo .edit-champ-image-photo .input-nvl-photo {
   width: 100%;
@@ -3571,6 +3650,12 @@ body .ui-autocomplete .ui-menu-item .ui-state-active {
   transform: scaleX(1);
   transition: transform 0.5s ease;
   background-color: #241F48;
+  /* Responsive pour mobile et tablette */
+}
+@media (max-width: 991.98px) {
+  .pagination-custom .tableau-pagination .pagination-element .pagination-lien:hover {
+    background-color: #E00501;
+  }
 }
 .pagination-custom .tableau-pagination .pagination-element .pagination-lien::before, .pagination-custom .tableau-pagination .pagination-element .pagination-lien::after {
   content: "";
@@ -3582,6 +3667,12 @@ body .ui-autocomplete .ui-menu-item .ui-state-active {
   transform-origin: center right;
   transform: scaleX(0);
   transition: transform 0.5s ease;
+  /* Responsive pour mobile et tablette */
+}
+@media (max-width: 991.98px) {
+  .pagination-custom .tableau-pagination .pagination-element .pagination-lien::before, .pagination-custom .tableau-pagination .pagination-element .pagination-lien::after {
+    display: none;
+  }
 }
 .pagination-custom .tableau-pagination .pagination-element .pagination-lien::before {
   top: 0;

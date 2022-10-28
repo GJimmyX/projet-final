@@ -201,7 +201,7 @@ class CreatePilotesSeeder extends Seeder
             ],
         ];
 
-        // Pour chaque pilote rensigné, implantation dans une ligne de la table 'Pilotes' dans la base de données
+        // Pour chaque pilote renseigné, implantation dans une ligne de la table 'Pilotes' dans la base de données
 
         foreach ($pilotes as $key => $pilote) {
             Pilote::create($pilote);
