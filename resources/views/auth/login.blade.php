@@ -49,7 +49,7 @@
                                 <!-- Coche permettant de retenir les identifiants de connexion -->
 
                                 <div class="row mb-3">
-                                    <div class="col-md-4">
+                                    <div class="col-md-8">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" name="remember" id="remember" <?php old('remember') ? 'checked' : ''; ?>>
 

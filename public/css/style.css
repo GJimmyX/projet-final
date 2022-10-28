@@ -425,19 +425,19 @@ body .ui-autocomplete .ui-menu-item .ui-state-active {
 .backgroundLogin .loginContainer .row .col-md-8 .card .card-body form .mb-3 .col-md-6 #password:focus, .backgroundLogin .loginContainer .row .col-md-8 .card .card-body form .mb-3 .col-md-6 #email:focus {
   box-shadow: 0 0 0 0.25rem rgb(223, 110, 106);
 }
-.backgroundLogin .loginContainer .row .col-md-8 .card .card-body form .mb-3 .col-md-4 {
+.backgroundLogin .loginContainer .row .col-md-8 .card .card-body form .mb-3 .col-md-8 {
   display: flex;
   justify-content: center;
 }
-.backgroundLogin .loginContainer .row .col-md-8 .card .card-body form .mb-3 .col-md-4 #remember {
+.backgroundLogin .loginContainer .row .col-md-8 .card .card-body form .mb-3 .col-md-8 #remember {
   /* Coche  Se Souvenir de Moi */
   background-color: #2A2622;
   border-color: #E00501;
 }
-.backgroundLogin .loginContainer .row .col-md-8 .card .card-body form .mb-3 .col-md-4 #remember:focus {
+.backgroundLogin .loginContainer .row .col-md-8 .card .card-body form .mb-3 .col-md-8 #remember:focus {
   box-shadow: none;
 }
-.backgroundLogin .loginContainer .row .col-md-8 .card .card-body form .mb-3 .col-md-4 #remember:checked {
+.backgroundLogin .loginContainer .row .col-md-8 .card .card-body form .mb-3 .col-md-8 #remember:checked {
   background-color: #E00501;
   border-color: #E00501;
 }
