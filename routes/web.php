@@ -60,6 +60,12 @@ Route::get('/mentions-legales', function () {
     return view('mentions-legales');
 });
 
+/* Route pour la page 'Plan du site' Visiteur */
+
+Route::get('/plan-du-site', function () {
+    return view('plan-du-site');
+});
+
 Auth::routes();
 
 /*------------------------------------------

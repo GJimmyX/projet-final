@@ -58,6 +58,9 @@ footer{
                     width: 50%;
                     margin: 1rem 0;
                 }
+
+                /* Responsive pour la tablette */
+
                 @media (max-width: 991.98px){
                     text-align: center;
                 }
@@ -76,6 +79,9 @@ footer{
                     font-size: 1.25em;
                     line-height: 1;
                     color: white;
+
+                    /* Responsive pour le mobile */
+                    
                     @media (max-width: 575.98px){
                         margin: 1rem 0;
                     }
@@ -105,6 +111,9 @@ footer{
             width: 33%;
             padding: 0;
             cursor: context-menu;
+
+            /* Responsive pour la tablette */
+
             @media (max-width: 991.98px){
                 width: 100%;
             }
@@ -114,10 +123,16 @@ footer{
             .rsLink{
                 width: 100%;
                 justify-content: end;
+
+                /* Responsive pour le mobile */
+
                 @media (max-width: 575.98px){
                     flex-direction: column;
                     align-items: center;
                 }
+
+                /* Responsive pour la tablette */
+
                 @media (max-width: 991.98px){
                     margin: 1rem 0;
                     justify-content: center;
@@ -128,6 +143,45 @@ footer{
                     font-size: 1.5em;
                     line-height: 1;
                     color: white;
+
+                    /* Responsive pour le mobile */
+
+                    @media (max-width: 575.98px){
+                        margin: 1rem 0;
+                    }
+                }
+            }
+
+            /* Plan du site */
+
+            .sitePlan{
+                width: 100%;
+                justify-content: end;
+
+                /* Responsive pour le mobile */
+
+                @media (max-width: 575.98px){
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                /* Responsive pour la tablette */
+
+                @media (max-width: 991.98px){
+                    margin: 1rem 0;
+                    justify-content: center;
+                }
+                .sitePlanLink{
+                    margin: 0 19.5%;
+                    text-decoration: none;
+                    font-family: 'Lato', sans-serif;
+                    font-weight: 300;
+                    font-size: 1.25em;
+                    line-height: 1;
+                    color: white;
+
+                    /* Responsive pour le mobile */
+
                     @media (max-width: 575.98px){
                         margin: 1rem 0;
                     }

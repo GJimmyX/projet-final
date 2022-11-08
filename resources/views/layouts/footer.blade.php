@@ -23,6 +23,12 @@
                         <a href="https://www.instagram.com/" target="_blank" class="fa-brands rsItem"></a>
                         <a href="https://github.com/GJimmyX/projet-final" target="_blank" class="fa-brands rsItem"></a>
                     </div>
+
+                    <!-- Plan du site -->
+
+                    <div class="d-flex sitePlan">
+                        <a href="{{ url('/plan-du-site') }}" class="sitePlanLink">Plan du site</a>
+                    </div>
                 </div>
             </div>
         </footer>

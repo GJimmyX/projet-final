@@ -74,6 +74,10 @@
 
 @import 'parts/pages/mentions-legales';
 
+/* Import du CSS pour 'plan-du-site.php' */
+
+@import 'parts/pages/plan-du-site';
+
 /* Import du CSS pour '404.php' */
 
 @import 'parts/errors/404';
@@ -532,7 +536,7 @@
 
         /* Responsive pour la tablette */
 
-        @media (min-width: 576px) AND (max-width: 991.98px){
+        @media (min-width: 576px) AND (max-width: 1399.98px){
             flex-wrap: wrap;
             justify-content: space-between;
             gap: 2.5rem;
@@ -562,7 +566,7 @@
 
             /* Responsive pour la tablette */
 
-            @media (min-width: 576px) AND (max-width: 991.98px){
+            @media (min-width: 576px) AND (max-width: 1399.98px){
                 width: 45%;
             }
 
@@ -586,6 +590,12 @@
                         font-family: 'Open Sans', sans-serif;
                         font-weight: 800;
                         font-size: 1rem;
+
+                        /* Responsive pour la tablette */
+
+                        @media (min-width: 992px) AND (max-width: 1499.98px){
+                            font-size: 0.825rem;
+                        }
                     }
                 }
                 .contenu-card{

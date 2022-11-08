@@ -4656,6 +4656,72 @@ body .ui-autocomplete .ui-menu-item .ui-state-active {
   color: #FFFFFF;
 }
 
+/* Import du CSS pour 'plan-du-site.php' */
+/* CSS de la page du plan de site 'Passionné de Formule 1' */
+.plan-du-site {
+  /* Police d'écriture et curseur utilisés sur la page */
+  font-family: "Lato", sans-serif;
+  cursor: context-menu;
+  /* Arrière-plan de la page */
+  min-height: 732px;
+  padding: 5% 10%;
+  background-color: #54514E;
+}
+.plan-du-site .liens-plan-du-site {
+  /* Liens pour les visiteurs du plan de site */
+  /* Ligne pour la page 'Mentions légales' */
+  /* Liens de la section Administrateur du site 'Passionné de Formule 1' */
+}
+.plan-du-site .liens-plan-du-site .ligne01, .plan-du-site .liens-plan-du-site .ligne02, .plan-du-site .liens-plan-du-site .ligne03 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.plan-du-site .liens-plan-du-site .ligne01 .planItem, .plan-du-site .liens-plan-du-site .ligne02 .planItem, .plan-du-site .liens-plan-du-site .ligne03 .planItem {
+  width: 100%;
+  text-align: center;
+}
+.plan-du-site .liens-plan-du-site .ligne01 .planItem a, .plan-du-site .liens-plan-du-site .ligne02 .planItem a, .plan-du-site .liens-plan-du-site .ligne03 .planItem a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+}
+.plan-du-site .liens-plan-du-site .ligne04 {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+.plan-du-site .liens-plan-du-site .ligne04 .planItem {
+  width: 100%;
+  text-align: center;
+}
+.plan-du-site .liens-plan-du-site .ligne04 .planItem a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+}
+.plan-du-site .liens-plan-du-site .section-admin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  /* Accès aux controllers lorsque l'on est connecté */
+}
+.plan-du-site .liens-plan-du-site .section-admin .adminPlanItem {
+  width: 100%;
+  text-align: center;
+}
+.plan-du-site .liens-plan-du-site .section-admin .adminPlanItem a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+}
+.plan-du-site .liens-plan-du-site .section-admin .liens-admin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* Import du CSS pour '404.php' */
 /* CSS pour la page 404 du site 'Passionné de Formule 1' */
 .page-404 {
@@ -4753,6 +4819,7 @@ footer .footer-container .col-copyright-mentions {
 footer .footer-container .col-copyright-mentions .col-copyright, footer .footer-container .col-copyright-mentions .col-mentions {
   /* Responsive pour le mobile */
   /* Responsive pour la tablette */
+  /* Responsive pour la tablette */
 }
 @media (max-width: 575.98px) {
   footer .footer-container .col-copyright-mentions .col-copyright, footer .footer-container .col-copyright-mentions .col-mentions {
@@ -4785,6 +4852,7 @@ footer .footer-container .col-copyright-mentions .col-copyright .copyrightText {
   font-size: 1.25em;
   line-height: 1;
   color: white;
+  /* Responsive pour le mobile */
 }
 @media (max-width: 575.98px) {
   footer .footer-container .col-copyright-mentions .col-copyright .copyrightText {
@@ -4811,7 +4879,9 @@ footer .footer-container .col-rs {
   width: 33%;
   padding: 0;
   cursor: context-menu;
+  /* Responsive pour la tablette */
   /* Liens 'Réseaux sociaux' */
+  /* Plan du site */
 }
 @media (max-width: 991.98px) {
   footer .footer-container .col-rs {
@@ -4821,6 +4891,8 @@ footer .footer-container .col-rs {
 footer .footer-container .col-rs .rsLink {
   width: 100%;
   justify-content: end;
+  /* Responsive pour le mobile */
+  /* Responsive pour la tablette */
 }
 @media (max-width: 575.98px) {
   footer .footer-container .col-rs .rsLink {
@@ -4840,9 +4912,43 @@ footer .footer-container .col-rs .rsLink .rsItem {
   font-size: 1.5em;
   line-height: 1;
   color: white;
+  /* Responsive pour le mobile */
 }
 @media (max-width: 575.98px) {
   footer .footer-container .col-rs .rsLink .rsItem {
+    margin: 1rem 0;
+  }
+}
+footer .footer-container .col-rs .sitePlan {
+  width: 100%;
+  justify-content: end;
+  /* Responsive pour le mobile */
+  /* Responsive pour la tablette */
+}
+@media (max-width: 575.98px) {
+  footer .footer-container .col-rs .sitePlan {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 991.98px) {
+  footer .footer-container .col-rs .sitePlan {
+    margin: 1rem 0;
+    justify-content: center;
+  }
+}
+footer .footer-container .col-rs .sitePlan .sitePlanLink {
+  margin: 0 19.5%;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 1.25em;
+  line-height: 1;
+  color: white;
+  /* Responsive pour le mobile */
+}
+@media (max-width: 575.98px) {
+  footer .footer-container .col-rs .sitePlan .sitePlanLink {
     margin: 1rem 0;
   }
 }
@@ -5235,7 +5341,7 @@ footer .footer-container .col-rs .rsLink .rsItem {
     gap: 0;
   }
 }
-@media (min-width: 576px) and (max-width: 991.98px) {
+@media (min-width: 576px) and (max-width: 1399.98px) {
   .accueil .accueil-articles {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -5265,7 +5371,7 @@ footer .footer-container .col-rs .rsLink .rsItem {
     margin: 1rem 0;
   }
 }
-@media (min-width: 576px) and (max-width: 991.98px) {
+@media (min-width: 576px) and (max-width: 1399.98px) {
   .accueil .accueil-articles .articles-card {
     width: 45%;
   }
@@ -5288,6 +5394,12 @@ footer .footer-container .col-rs .rsLink .rsItem {
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-size: 1rem;
+  /* Responsive pour la tablette */
+}
+@media (min-width: 992px) and (max-width: 1499.98px) {
+  .accueil .accueil-articles .articles-card .container-card .entete-card .titre-card, .accueil .accueil-articles .articles-card .container-card .entete-card .date-card p {
+    font-size: 0.825rem;
+  }
 }
 .accueil .accueil-articles .articles-card .container-card .contenu-card {
   /* Contenu de l'article */
