@@ -12,6 +12,8 @@
                     <div class="col-mentions">
                         <a href="{{ url('/mentions-legales') }}" class="mentionsText">Mentions Légales</a>
                     </div>
+
+                    <hr>
                 </div>
 
                 <!-- Lien vers mes réseaux sociaux -->
