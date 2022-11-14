@@ -97,6 +97,7 @@
 
         /* Image en arrière plan */
 
+        min-height: 715px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -322,6 +323,12 @@
                                 width: 1.5em;
                                 transform: translate3d(-525%, 0, 0) rotate(35deg);
 
+                                /* Correction valeur de translation en écran PC Portable (< 1360px) */
+
+                                @media (max-width: 1359.98px){
+                                    transform: translate3d(-615%, 0, 0) rotate(35deg);
+                                }
+
                                 /* Responsive mobile et tablette */
 
                                 @media (max-width: 991.98px){
@@ -331,6 +338,12 @@
                             .vision:hover::after, .edition:hover::after{
                                 transition: transform 0.45s ease-in-out;
                                 transform: translate3d(200%, 0, 0) rotate(35deg);
+
+                                /* Correction valeur de translation en écran PC Portable (< 1360px) */
+
+                                @media (max-width: 1359.98px){
+                                    transform: translate3d(375%, 0, 0) rotate(35deg);
+                                }
                             }
                             form{
 
@@ -355,6 +368,12 @@
                                     width: 1.5em;
                                     transform: translate3d(-525%, 0, 0) rotate(35deg);
 
+                                    /* Correction valeur de translation en écran PC Portable (< 1360px) */
+
+                                    @media (max-width: 1359.98px){
+                                        transform: translate3d(-680%, 0, 0) rotate(35deg);
+                                    }
+
                                     /* Responsive mobile et tablette */
 
                                     @media (max-width: 991.98px){
@@ -364,6 +383,12 @@
                                 .suppression:hover::after{
                                     transition: transform 0.45s ease-in-out;
                                     transform: translate3d(200%, 0, 0) rotate(35deg);
+
+                                    /* Correction valeur de translation en écran PC Portable (< 1360px) */
+
+                                    @media (max-width: 1359.98px){
+                                        transform: translate3d(275%, 0, 0) rotate(35deg);
+                                    }
                                 }
                             }
                         }

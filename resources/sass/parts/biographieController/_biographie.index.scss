@@ -97,6 +97,7 @@
 
         /* Image en arrière plan */
 
+        min-height: 715px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -275,6 +276,12 @@
                                 width: 1.5em;
                                 transform: translate3d(-525%, 0, 0) rotate(35deg);
 
+                                /* Correction valeur de translation en écran large (> 1400px) */
+
+                                @media (min-width: 1400px){
+                                    transform: translate3d(-725%, 0, 0) rotate(35deg);
+                                }
+
                                 /* Responsive mobile et tablette */
 
                                 @media (max-width: 991.98px){
@@ -283,7 +290,7 @@
                             }
                             .vision:hover::after, .edition:hover::after{
                                 transition: transform 0.45s ease-in-out;
-                                transform: translate3d(200%, 0, 0) rotate(35deg);
+                                transform: translate3d(400%, 0, 0) rotate(35deg);
                             }
                             form{
     
@@ -306,7 +313,7 @@
                                     top: -50%;
                                     bottom: -50%;
                                     width: 1.5em;
-                                    transform: translate3d(-525%, 0, 0) rotate(35deg);
+                                    transform: translate3d(-725%, 0, 0) rotate(35deg);
 
                                     /* Responsive mobile et tablette */
 
@@ -317,6 +324,12 @@
                                 .suppression:hover::after{
                                     transition: transform 0.45s ease-in-out;
                                     transform: translate3d(200%, 0, 0) rotate(35deg);
+
+                                    /* Correction valeur de translation en écran large (> 1400px) */
+
+                                    @media (min-width: 1400px){
+                                        transform: translate3d(300%, 0, 0) rotate(35deg);
+                                    }
                                 }
                             }
                         }
