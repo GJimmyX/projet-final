@@ -237,8 +237,6 @@
         </div>
     </main>
 
-    @include('layouts.footer')
-
     <!-- JS pour les modals de la page d'accueil -->
 
     <script>
@@ -296,5 +294,7 @@
         });
 
     </script>
+
+    @include('layouts.footer')
 
 @endsection

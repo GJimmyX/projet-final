@@ -11,7 +11,7 @@
 
         <!-- Description du site -->
 
-        <meta name="description" content="Vous êtes sur le site 'Passionné de Formule 1', crée par 1 fan de aimant ce sport depuis son plus jeune âge !">
+        <meta name="description" content="Vous êtes sur le site 'Passionné de Formule 1', crée par 1 fan aimant ce sport depuis son plus jeune âge !">
 
         <!-- Font Awesome -->
 
@@ -49,7 +49,7 @@
                 <!-- Logo du site 'Passionné de Formule 1' -->
 
                 <h1 class="siteLogo">
-                    <div class="logo">
+                    <span class="logo">
                         <a href="{{ route('index') }}" class="logoLink">
                             <img src="{{ url('images/siteLogo.png') }}" alt="Logo du site 'Passionnée de Formule 1'" class="logoImg">
                         </a>
@@ -58,7 +58,7 @@
 
                 <!-- Menu de Navigation du site -->
 
-                <nav class="navbar siteNav" id="navbarToggler" role="navigation">
+                <nav class="navbar siteNav" id="navbarToggler">
 
                     <!-- Menu pour l'utilisateur -->
 
@@ -123,10 +123,9 @@
                     <!-- Barre de recherche du site 'Passionné de Formule 1' -->
 
                     <div class="d-flex flex-column navSearch">
-                        <button id="searchBtn" title="Rechercher"><p class="fas mimify-glass"></p></button>
+                        <button id="searchBtn" title="Rechercher"><span class="fas mimify-glass"></span></button>
                         <form id="searchBar" action="{{ route('recherche') }}" method="get" enctype="multipart/form-data" class="searchForm">
-                            <label for="searchBarInput"></label>
-                            <input type="text" id="searchBar-input" name="searchBar-input" placeholder="Recherche..." aria-label="Rechercher" required="true" class="form-control searchInput">
+                            <input type="text" id="searchBar-input" name="searchBar-input" placeholder="Recherche..." aria-label="Rechercher" required class="form-control searchInput">
                         </form>
                     </div>
                 </nav>

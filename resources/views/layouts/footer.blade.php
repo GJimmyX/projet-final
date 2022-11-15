@@ -39,7 +39,7 @@
 
         <!-- URL du site -->
 
-        <script type="text/javascript">
+        <script>
             var siteUrl = "{{url('/')}}";
         </script>
 
@@ -53,7 +53,7 @@
 
         <!-- Scripts -->
         
-        <script type="module" src="{{ asset('js/app.js') }}" defer></script>
+        <script src="{{ asset('js/app.js') }}" defer></script>
         
         <!-- JS pour les cookies -->
 
