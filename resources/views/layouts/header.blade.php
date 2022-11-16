@@ -53,7 +53,7 @@
                         <a href="{{ route('index') }}" class="logoLink">
                             <img src="{{ url('images/siteLogo.png') }}" alt="Logo du site 'Passionnée de Formule 1'" class="logoImg">
                         </a>
-                    </div>
+                    </span>
                 </h1>
 
                 <!-- Menu de Navigation du site -->
@@ -86,9 +86,9 @@
                             <!-- Bouton de connexion de l'administrateur -->
 
                             @guest
-                                @if (Route::has('login'))
+                                @if (Route::has('connexion_passionf1'))
                                     <li class="nav-item text-center">
-                                        <a class="nav-link" href="{{ route('login') }}"><i class="fa-regular"></i></a>
+                                        <a class="nav-link" href="{{ route('connexion_passionf1') }}"><i class="fa-regular"></i></a>
                                     </li>
                                 @endif
                             @else
@@ -106,12 +106,12 @@
                                         <a class="dropdown-item" href="{{ route('biographie.index') }}">{{ __('Biographies du site') }}</a>
                                         <a class="dropdown-item" href="{{ route('photo.index') }}">{{ __('Photos du site') }}</a>
 
-                                        <a class="dropdown-item" href="{{ route('logout') }}"
+                                        <a class="dropdown-item" href="{{ route('deconnexion_passionf1') }}"
                                         onclick="event.preventDefault();
                                                         document.getElementById('logout-form').submit();">
                                             {{ __('Déconnexion') }}
                                         </a>
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        <form id="logout-form" action="{{ route('deconnexion_passionf1') }}" method="POST" class="d-none">
                                             @csrf
                                         </form>
                                     </div>

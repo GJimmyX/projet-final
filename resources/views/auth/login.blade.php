@@ -23,7 +23,7 @@
                         <div class="card-header">{{ __('Connexion Administrateur') }}</div>
 
                         <div class="card-body">
-                            <form method="POST" action="{{ route('login') }}">
+                            <form method="POST" action="{{ route('connexion_passionf1') }}">
                                 @csrf
 
                                 <!-- Champ de renseignement de l'adresse mail -->

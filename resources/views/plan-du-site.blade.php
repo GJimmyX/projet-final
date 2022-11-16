@@ -61,16 +61,16 @@
 
                 @guest()
                     <div class="adminPlanItem">
-                        <a href="{{ route('login') }}">Connexion</a>
+                        <a href="{{ route('connexion_passionf1') }}">Connexion</a>
                     </div> 
                 @else
                     <div class="adminPlanItem">
-                        <a href="{{ route('logout') }}"
+                        <a href="{{ route('deconnexion_passionf1') }}"
                         onclick="event.preventDefault();
                                         document.getElementById('logout-form').submit();">
                             Déconnexion
                         </a>
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        <form id="logout-form" action="{{ route('deconnexion_passionf1') }}" method="POST" class="d-none">
                             @csrf
                         </form>
                     </div>

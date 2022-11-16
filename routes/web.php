@@ -8,6 +8,7 @@ use App\Http\Controllers\BiographieController;
 use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\ContactFormController;
 use App\Http\Controllers\SearchController;
+use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Auth;
 
 /*
@@ -66,7 +67,18 @@ Route::get('/plan-du-site', function () {
     return view('plan-du-site');
 });
 
-Auth::routes();
+/* Routes pour la connexion et la déconnexion du site */
+
+/* Connexion au site */
+
+Route::get('connexion_passionf1', [App\Http\Controllers\Auth\LoginController::class, 'passionf1LoginForm']);
+Route::post('connexion_passionf1', [App\Http\Controllers\Auth\LoginController::class, 'login'])->name('connexion_passionf1');
+
+/* Déconnexion du site */
+
+Route::post('deconnexion_passionf1', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('deconnexion_passionf1');
+
+Auth::routes(['register' => false, 'login' => false, 'logout' => false]);
 
 /*------------------------------------------
 --------------------------------------------

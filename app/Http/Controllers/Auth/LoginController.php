@@ -40,6 +40,13 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
+    /* Fonction d'affichage du formulaire de connexion du site 'Passionné de Formule 1' */
+
+    public function passionf1LoginForm()
+    {
+        return view('auth.login');
+    }
+
     /* Fonction de connexion au site 'Passionné de Formule 1' */
 
     public function login(Request $request)
@@ -56,7 +63,7 @@ class LoginController extends Controller
             return redirect()->route('article.index')
                 ->with('success', "Vous êtes connecté !");
         }else{
-            return redirect()->route('login')
+            return redirect()->route('connexion_passionf1')
                 ->with('error', "L'email et/ou le mot de passe sont incorrectes.");
         }
     }
