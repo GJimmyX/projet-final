@@ -16,7 +16,14 @@ class ViewController extends Controller
     public function index()
     {
         $collection = Article::all();
-        $articles = collect($collection)->random(4);
+        
+        if (count($collection) >= 4){
+            $articles = collect($collection)->random(4);
+        }
+        else{
+            $articles = collect($collection);
+        } 
+
         return view('index', compact('articles'));
     }
 
