@@ -44,6 +44,7 @@ body header .header-container .siteLogo {
   font-size: 1.5em;
   line-height: 1;
   color: white;
+  text-align: center;
   /* Responsive pour le mobile */
   /* Responsive pour la tablette */
 }
@@ -56,9 +57,6 @@ body header .header-container .siteLogo {
   body header .header-container .siteLogo {
     padding: 0.5rem 0;
   }
-}
-body header .header-container .siteLogo .logo {
-  text-align: center;
 }
 body header .header-container .siteLogo .logo .logoLink {
   text-decoration: none;
