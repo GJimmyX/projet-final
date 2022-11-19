@@ -4758,6 +4758,14 @@ body .ui-autocomplete .ui-menu-item .ui-state-active {
   display: flex;
   justify-content: center;
   gap: 20px;
+  /* Responsive mobile et tablette */
+}
+@media (max-width: 991.98px) {
+  .plan-du-site .liens-plan-du-site .ligne01, .plan-du-site .liens-plan-du-site .ligne02, .plan-du-site .liens-plan-du-site .ligne03 {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
 }
 .plan-du-site .liens-plan-du-site .ligne01 .planItem, .plan-du-site .liens-plan-du-site .ligne02 .planItem, .plan-du-site .liens-plan-du-site .ligne03 .planItem {
   width: 100%;
@@ -4769,9 +4777,15 @@ body .ui-autocomplete .ui-menu-item .ui-state-active {
   font-size: 1.5rem;
 }
 .plan-du-site .liens-plan-du-site .ligne04 {
-  margin: 1rem 0;
+  margin: 1rem 0 10px 0;
   display: flex;
   justify-content: center;
+  /* Responsive mobile et tablette */
+}
+@media (max-width: 991.98px) {
+  .plan-du-site .liens-plan-du-site .ligne04 {
+    margin: 10px 0;
+  }
 }
 .plan-du-site .liens-plan-du-site .ligne04 .planItem {
   width: 100%;

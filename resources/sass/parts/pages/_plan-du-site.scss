@@ -20,6 +20,14 @@
             display: flex;
             justify-content: center;
             gap: 20px;
+
+            /* Responsive mobile et tablette */
+
+            @media (max-width: 991.98px){
+                flex-direction: column;
+                align-items: center;
+                gap: 0;
+            }
             .planItem{
                 width: 100%;
                 text-align: center;
@@ -34,9 +42,15 @@
         /* Ligne pour la page 'Mentions légales' */
 
         .ligne04{
-            margin: 1rem 0;
+            margin: 1rem 0 10px 0;
             display: flex;
             justify-content: center;
+
+            /* Responsive mobile et tablette */
+
+            @media (max-width: 991.98px){
+                margin: 10px 0;
+            }
             .planItem{
                 width: 100%;
                 text-align: center;
