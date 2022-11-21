@@ -74,25 +74,25 @@
                             @csrf
                         </form>
                     </div>
+
+                    <div class="liens-admin">
+
+                        <!-- Rubriques Admin -->
+
+                        <div class="adminPlanItem">
+                            <a href="{{ route('classement.pilotes.index') }}">Gestion des pilotes</a>
+                        </div>
+                        <div class="adminPlanItem">
+                            <a href="{{ route('article.index') }}">Articles du site</a>
+                        </div>
+                        <div class="adminPlanItem">
+                            <a href="{{ route('biographie.index') }}">Biographies du site</a>
+                        </div>
+                        <div class="adminPlanItem">
+                            <a href="{{ route('photo.index') }}">Photos du site</a>
+                        </div>
+                    </div>
                 @endguest
-
-                <div class="liens-admin">
-
-                    <!-- Rubriques Admin -->
-
-                    <div class="adminPlanItem">
-                        <a href="{{ route('classement.pilotes.index') }}">Gestion des pilotes</a>
-                    </div>
-                    <div class="adminPlanItem">
-                        <a href="{{ route('article.index') }}">Articles du site</a>
-                    </div>
-                    <div class="adminPlanItem">
-                        <a href="{{ route('biographie.index') }}">Biographies du site</a>
-                    </div>
-                    <div class="adminPlanItem">
-                        <a href="{{ route('photo.index') }}">Photos du site</a>
-                    </div>
-                </div>
             </div>
         </div>
     </main>
