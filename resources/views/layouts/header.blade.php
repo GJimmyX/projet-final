@@ -32,7 +32,7 @@
 
         <!-- Icône du site -->
 
-        <link rel="icon" href="{{ url('images/bouton_icones/icon.png') }}">
+        <link rel="icon" href="{{ url('favicon.ico') }}">
 
         <!-- Titre du site -->
 
