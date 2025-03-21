@@ -73,7 +73,7 @@ COOKIE.Noti = {
             
             // message cookie_notification
 
-            var messageBox = document.createElement("div");
+            var messageBox = document.createElement("p");
             messageBox.setAttribute("id", "cookie_message");
             messageBox.innerHTML = COOKIE.QueryParams.msg ? bbcodeParser.bbcodeToHtml(decodeURIComponent(COOKIE.QueryParams.msg)) : bbcodeParser.bbcodeToHtml("En poursuivant votre navigation sur ce site, vous acceptez l’utilisation de Cookies pour réaliser des statistiques de visites. Pour plus d'infos, consulter la [url=https://eurowebpage.com/fr/politique-de-cookies/] Politique des Cookies[/url].");
             bottomPlayer.appendChild(messageBox);

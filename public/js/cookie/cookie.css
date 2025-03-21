@@ -46,6 +46,7 @@
     font-size: 15px;
     padding: 0;
     display: block;
+    margin: 0;
     padding-bottom: 25px;
 }
 .cookie #cookie_accept_button {

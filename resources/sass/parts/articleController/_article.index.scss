@@ -120,6 +120,7 @@
             }
             .index-table{
                 margin: 0;
+                --bs-table-bg: none;
                 .table-column{
                     border-color: #2A2622;
                     .column-name{

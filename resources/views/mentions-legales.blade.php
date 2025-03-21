@@ -20,11 +20,11 @@
                 </p>
                 <p class="part13">
                     1.3 Hébergeur (ci-après « l’hébergeur ») :<br/>
-                    Passionné de Formule 1 est hébergé par Hostinger, dont le siège social est situé au 61 rue Lordou Vironos, 6023 Larnaca, Chypre.
+                    Passionné de Formule 1 est hébergé par Infomaniak, dont le siège social est situé au Rue Eugène Marziano 25, 1227 Genève, Suisse.
                 </p>
                 <p class="part14">
                     1.4 Concepteur (ci-après « le concepteur ») :<br/>
-                    Mr GILBERT Jimmy, Développeur Web au sein de la société Juliot Électricité SARL.
+                    Mr GILBERT Jimmy, Développeur Web.
                 </p>
             </div>
         </div>

@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('drapeau');
             $table->string('img_ecurie');
             $table->integer('ecurie_id');
+            $table->string('maj');
             $table->timestamps();
         });
     }

@@ -33,7 +33,7 @@ class CreateUsersSeeder extends Seeder
              ],
              [
                 'name'=>'Jury',
-                'email'=>'gilbertg.jimmy@gmail.com',
+                'email'=>'gilbert.jimmy@gmail.com',
                 'type'=>1,
                 'password'=> bcrypt('Jy201,Pe8'),
              ],

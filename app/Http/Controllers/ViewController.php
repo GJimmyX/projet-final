@@ -34,7 +34,7 @@ class ViewController extends Controller
 
         /* Récupération des 10 premiers pilotes ayant le plus de points de la table 'Pilotes' */
 
-        $pilotes = Pilote::all()->sortByDesc('num_points')->take(10);
+        $pilotes = Pilote::all()->sortBy('maj')->sortByDesc('num_points')->take(10);
 
         /* Récupération de la table 'Ecuries' */
 

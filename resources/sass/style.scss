@@ -82,6 +82,14 @@
 
 @import 'parts/errors/404';
 
+/* Import du CSS pour '500.php' */
+
+@import 'parts/errors/500';
+
+/* Import du CSS pour '503.php' */
+
+@import 'parts/errors/503';
+
 /* Import du CSS pour 'footer.blade.php' */
 
 @import 'parts/layouts/footer';
@@ -225,7 +233,7 @@
                         /* Style bouton intro championnat 2022 de Formule 1 */
                         /* Style bouton sonorité d'un V10 */
 
-                        .intro-2022, .sonorite-v10{
+                        .intro-2024, .sonorite-v10{
                             z-index: 1;
                             position: relative;
                             font-size: 1.5em;
@@ -347,7 +355,7 @@
 
                         /* Effet sur les boutons */
                         
-                        .intro-2022::before, .sonorite-v10::before{
+                        .intro-2024::before, .sonorite-v10::before{
                             content: '';
                             z-index: -1;
                             position: absolute;
@@ -361,7 +369,7 @@
                             transform: scale(1);
                         }
 
-                        .intro-2022:hover::before, .sonorite-v10:hover::before{
+                        .intro-2024:hover::before, .sonorite-v10:hover::before{
                             transition: all 0.75s ease-in-out;
                             transform-origin: center;
                             transform: scale(2.25);

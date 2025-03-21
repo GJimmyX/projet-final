@@ -62,7 +62,12 @@ class PiloteController extends Controller
             'drapeau' => 'required|image|mimes:jpeg,jpg,png',
             'img_ecurie' => 'required|image|mimes:jpeg,jpg,png',
             'ecurie_id' => 'required',
+            'maj' => 'string',
         ]);
+
+        /* Ajout de la date dans la varibale maj */
+
+        $majDate = date("dmY_His");
 
         /* Récupération des données de l'image du drapeau et de l'écusson de l'écurie à importer */
 
@@ -76,7 +81,7 @@ class PiloteController extends Controller
         
         $collection = collect($request);
 
-        $mergeImg = $collection->merge(['drapeau' => $request->file('drapeau')->getClientOriginalName(), 'img_ecurie' => $request->file('img_ecurie')->getClientOriginalName()]);
+        $mergeImg = $collection->merge(['drapeau' => $request->file('drapeau')->getClientOriginalName(), 'img_ecurie' => $request->file('img_ecurie')->getClientOriginalName(), 'maj' => $majDate]);
 
         Pilote::create($mergeImg->all());
 
@@ -133,7 +138,14 @@ class PiloteController extends Controller
             'drapeau' => 'image|mimes:jpeg,jpg,png',
             'img_ecurie' => 'image|mimes:jpeg,jpg,png',
             'ecurie_id' => 'required',
+            'maj' => 'string',
         ]);
+
+        /* Ajout de la date dans la varibale maj */
+
+        $majData = Pilote::findOrFail($id)->updated_at;
+
+        $majDate = date_format($majData, "dmY_His");
 
         /* Récupération des données de l'image du drapeau et de l'écusson de l'écurie à importer */
 
@@ -154,16 +166,16 @@ class PiloteController extends Controller
         $dataCollect = collect($validData);
 
         if ($flagImg){
-            $dataMerged = $dataCollect->merge(['drapeau' => $request->file('drapeau')->getClientOriginalName()]);
+            $dataMerged = $dataCollect->merge(['drapeau' => $request->file('drapeau')->getClientOriginalName(), 'maj' => $majDate]);
         }
         else if ($teamImg){
-            $dataMerged = $dataCollect->merge(['img_ecurie' => $request->file('img_ecurie')->getClientOriginalName()]);
+            $dataMerged = $dataCollect->merge(['img_ecurie' => $request->file('img_ecurie')->getClientOriginalName(), 'maj' => $majDate]);
         }
         else if ($flagImg && $teamImg){
-            $dataMerged = $dataCollect->merge(['drapeau' => $request->file('drapeau')->getClientOriginalName(), 'img_ecurie' => $request->file('img_ecurie')->getClientOriginalName()]);
+            $dataMerged = $dataCollect->merge(['drapeau' => $request->file('drapeau')->getClientOriginalName(), 'img_ecurie' => $request->file('img_ecurie')->getClientOriginalName(), 'maj' => $majDate]);
         }
         else{
-            $dataMerged = $dataCollect;
+            $dataMerged = $dataCollect->merge(['maj' => $majDate]);
         }
 
         Pilote::whereId($id)->update($dataMerged->all());

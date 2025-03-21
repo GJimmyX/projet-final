@@ -20,14 +20,6 @@ class CreateEcuriesSeeder extends Seeder
 
         $ecuries = [
             [
-                'nom_ecurie' => 'Alfa Roméo',
-                'points_ecurie' => 0,
-            ],
-            [
-                'nom_ecurie' => 'AlphaTauri',
-                'points_ecurie' => 0,
-            ],
-            [
                 'nom_ecurie' => 'Alpine',
                 'points_ecurie' => 0,
             ],
@@ -52,7 +44,15 @@ class CreateEcuriesSeeder extends Seeder
                 'points_ecurie' => 0,
             ],
             [
+                'nom_ecurie' => 'Racing Bulls',
+                'points_ecurie' => 0,
+            ],
+            [
                 'nom_ecurie' => 'RedBull',
+                'points_ecurie' => 0,
+            ],
+            [
+                'nom_ecurie' => 'Sauber',
                 'points_ecurie' => 0,
             ],
             [

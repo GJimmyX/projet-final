@@ -22,6 +22,7 @@ class Pilote extends Model
         'drapeau',
         'img_ecurie',
         'ecurie_id',
+        'maj',
     ];
 
     protected $guarded = [];

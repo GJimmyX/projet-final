@@ -69,7 +69,7 @@
 
                             <!-- Intro championnat 2022 de Formule 1 -->
 
-                            <button id="intro-button" class="intro-2022">
+                            <button id="intro-button" class="intro-2024">
                                 Intro Officielle
                             </button>
                             <div id="modal-intro" class="modal">
@@ -77,7 +77,7 @@
                                     <span class="fas modal-button"></span>
                                     <div class="modal-content">
                                         <video id="vid">
-                                            <source src="{{ url('images/medias/intro_F1_2022.mp4') }}" type="video/mp4">
+                                            <source src="{{ url('images/medias/intro_F1_2024.mp4') }}" type="video/mp4">
                                         </video>
                                     </div>
                                 </div>

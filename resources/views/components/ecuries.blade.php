@@ -20,14 +20,6 @@
 
         /* Condition pour chacune des écuries */
 
-        if ($ecurie == 'Alfa Roméo') {
-            $imgEcurie = asset('images/ecurie/logo_alfaromeo.png');
-            $drapEcurie = asset('images/ecurie/logo_suisse.png');
-        }
-        if ($ecurie == 'AlphaTauri') {
-            $imgEcurie = asset('images/ecurie/logo_alphatauri.png');
-            $drapEcurie = asset('images/ecurie/logo_italie.png');
-        }
         if ($ecurie == 'Alpine') {
             $imgEcurie = asset('images/ecurie/logo_alpine.png');
             $drapEcurie = asset('images/ecurie/logo_france.png');
@@ -52,9 +44,17 @@
             $imgEcurie = asset('images/ecurie/logo_mercedes.png');
             $drapEcurie = asset('images/ecurie/logo_allemagne.png');
         }
+        if ($ecurie == 'Racing Bulls') {
+            $imgEcurie = asset('images/ecurie/logo_racing_bulls.png');
+            $drapEcurie = asset('images/ecurie/logo_italie.png');
+        }
         if ($ecurie == 'RedBull') {
             $imgEcurie = asset('images/ecurie/logo_redbull.png');
             $drapEcurie = asset('images/ecurie/logo_autriche.png');
+        }
+        if ($ecurie == 'Sauber') {
+            $imgEcurie = asset('images/ecurie/logo_stakef1.png');
+            $drapEcurie = asset('images/ecurie/logo_suisse.png');
         }
         if ($ecurie == 'Williams') {
             $imgEcurie = asset('images/ecurie/logo_williams.png');

@@ -107,7 +107,7 @@
                         <!-- Role du pilote (Pilote N°1 ou N°2 ?) -->
                         <div class="form-pilote-champ-role_pilote">
                             <strong>Role du pilote dans l'écurie :</strong>
-                            <input type="text" name="role_pilote" id="role_pilote" value="{{isset($pilote->role_pilote) ? $pilote->role_pilote : old('role_pilote')}}" placeholder="Nom de l'écurie et numéro de pilote (01 pour premier pilote, 02 pour second ou 03 pour réserve). Ex : alfa01" class="form-control">
+                            <input type="text" name="role_pilote" id="role_pilote" value="{{isset($pilote->role_pilote) ? $pilote->role_pilote : old('role_pilote')}}" placeholder="Nom de l'écurie et numéro de pilote (01 pour premier pilote, 02 pour second ou 03 pour réserve). Ex : alpine01" class="form-control">
                         </div>
                         <!-- Nom du Pilote -->
                         <div class="form-pilote-champ-nom-pilote">
